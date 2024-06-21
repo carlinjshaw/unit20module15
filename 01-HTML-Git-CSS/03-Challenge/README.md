@@ -10,17 +10,17 @@ Challenges adhere to a format that's commonly used by software development teams
 
 Each Challenge contains the following elements:
 
-* **User Story**: This is a short, simple description of a feature told from the perspective of the person who is requesting the new capability, usually a user or customer of the system. This follows an AS AN / I WANT / SO THAT format. For example, "AS A shopper visiting an online store, I WANT to place items in a shopping cart, SO THAT I can purchase them." 
+* **User Story**: This is a short, simple description of a feature told from the perspective of the person who is requesting the new capability, usually a user or customer of the system. This follows an AS AN / I WANT / SO THAT format. For example, "AS A shopper visiting an online store, I WANT to place items in a shopping cart, SO THAT I can purchase them."
 
-* **Acceptance Criteria**: These are the requirements that you must meet to satisfy the scope of work. They are not exhaustive, but they do entail the minimum aspects of a working solution. Consider this a checklist of baseline requirements. Acceptance criteria can be presented in various ways. In this case, we'll use a common format called **scenario-oriented criteria** which expresses each requirement in a WHEN / THEN format. Don't worry if this doesn't make sense now; it will become very familiar to you after you complete a couple of challenges. 
+* **Acceptance Criteria**: These are the requirements that you must meet to satisfy the scope of work. They are not exhaustive, but they do entail the minimum aspects of a working solution. Consider this a checklist of baseline requirements. Acceptance criteria can be presented in various ways. In this case, we'll use a common format called **scenario-oriented criteria** which expresses each requirement in a WHEN / THEN format. Don't worry if this doesn't make sense now; it will become very familiar to you after you complete a couple of challenges.
 
 * **Mock-up**: This is an image or animation that demonstrates the design and functionality of the web application that you'll build for the Challenge.
 
 ## HTML CSS Git Challenge: Code Refactor
 
-This week's challenge involves a very important aspect of web development: **accessibility**. 
+This week's challenge involves a very important aspect of web development: **accessibility**.
 
-One of the most common tasks for front-end and junior developers is to take existing code and refactor it (recall that to refactor code is to improve it without changing what it does) to meet a certain set of standards or implement a new technology. In this Challenge, a marketing agency has hired you to refactor an existing site to make it more accessible. 
+One of the most common tasks for front-end and junior developers is to take existing code and refactor it (recall that to refactor code is to improve it without changing what it does) to meet a certain set of standards or implement a new technology. In this Challenge, a marketing agency has hired you to refactor an existing site to make it more accessible.
 
 > **note** Your coursework this week will prepare you with all the skills that you need to succeed on this assignment!
 
@@ -32,7 +32,7 @@ Even though accessibility is a broad topic that can include complex requirements
 
 To impress clients, you should always go the extra mile and improve the codebase for long-term sustainability. For example, make sure that all links are functioning correctly. Also, rework the CSS to make it more efficient by consolidating CSS selectors and properties, organizing them to follow the semantic structure of the HTML elements, and including comments before each element or section of the page.
 
-Are you ready to jump in? Here are this week's challenge requirements: 
+Are you ready to jump in? Here are this week's challenge requirements:
 
 ### User Story
 
@@ -74,23 +74,23 @@ This is an autograded assignment, meaning that you will follow the link below to
 
 ## Grading Requirements
 
-This Challenge is graded based on the following criteria: 
+This Challenge is graded based on the following criteria:
 
 ### Semantic Elements 42%
 
 * The HTML must have:
 
-    * a `header` element. (7 points)
+  * a `header` element. (7 points)
 
-    * a `nav` element. (7 points)
-    
-    * a `main` element. (7 points)
+  * a `nav` element. (7 points)
 
-    * more than one `section` element. (7 points)
-    
-    * an `aside` element. (7 points)
+  * a `main` element. (7 points)
 
-    * a `footer` element. (7 points)
+  * more than one `section` element. (7 points)
+
+  * an `aside` element. (7 points)
+
+  * a `footer` element. (7 points)
 
 ### Alt Attributes on Images 12%
 
