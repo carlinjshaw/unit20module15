@@ -4,7 +4,7 @@ const timeEl = document.querySelector('.time');
 // Selects element by id
 const mainEl = document.getElementById('main');
 
-const secondsLeft = 10;
+let secondsLeft = 10;
 
 function setTime() {
   // Sets interval in variable
