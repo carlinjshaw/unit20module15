@@ -6,7 +6,7 @@ const message =
 const words = message.split(' ');
 
 function countdown() {
-  const timeLeft = 5;
+  let timeLeft = 5;
 
   // TODO: Use the `setInterval()` method to call a function to be executed every 1000 milliseconds
   const timeInterval = setInterval(function () {
@@ -18,7 +18,7 @@ function countdown() {
 
 // Displays the message one word at a time
 function displayMessage() {
-  const wordCount = 0;
+  let wordCount = 0;
 
   // Uses the `setInterval()` method to call a function to be executed every 1000 milliseconds
   const msgInterval = setInterval(function () {
