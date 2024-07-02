@@ -3,7 +3,7 @@ const todoForm = document.querySelector('#todo-form');
 const todoList = document.querySelector('#todo-list');
 const todoCountSpan = document.querySelector('#todo-count');
 
-const todos = [];
+let todos = [];
 
 // The following function renders items in a todo list as <li> elements
 function renderTodos() {

@@ -12,7 +12,7 @@ let tempStorageObject = {
   text: [],
 };
 
-// ? We neet to keep track of the current element that is being dragged
+// ? We need to keep track of the current element that is being dragged
 let currentElement = null;
 
 // ? We create an event listener for the clear button. This will clear the mood board and the local storage.
