@@ -5,13 +5,13 @@ const todoCountSpan = document.querySelector('#todo-count');
 
 let todos = [];
 
-// TODO: What is the purpose of this function?
+// The following function renders items in a todo list as <li> elements
 function renderTodos() {
-  // TODO: Describe the functionality of the following two lines of code.
+  // Clear todoList element and update todoCountSpan
   todoList.innerHTML = '';
   todoCountSpan.textContent = todos.length;
 
-  // TODO: Describe the functionality of the following `for` loop.
+  // Render a new li for each todo
   for (let i = 0; i < todos.length; i++) {
     const todo = todos[i];
 
@@ -27,50 +27,60 @@ function renderTodos() {
   }
 }
 
-// TODO: What is the purpose of the following function?
+// This function is being called below and will run when the page loads.
 function init() {
-  // TODO: What is the purpose of the following line of code?
+  // Get stored todos from localStorage
   const storedTodos = JSON.parse(localStorage.getItem('todos'));
-  // TODO: Describe the functionality of the following `if` statement.
+
+  // If todos were retrieved from localStorage, update the todos array to it
   if (storedTodos !== null) {
     todos = storedTodos;
   }
-  // TODO: Describe the purpose of the following line of code.
+
+  // This is a helper function that will render todos to the DOM
   renderTodos();
 }
 
 function storeTodos() {
-  // TODO: Describe the purpose of the following line of code.
+  // Stringify and set key in localStorage to todos array
   localStorage.setItem('todos', JSON.stringify(todos));
 }
-// TODO: Describe the purpose of the following line of code.
+
+// Add submit event to form
 todoForm.addEventListener('submit', function (event) {
   event.preventDefault();
+
   const todoText = todoInput.value.trim();
-  // TODO: Describe the functionality of the following `if` statement.
+
+  // Return from function early if submitted todoText is blank
   if (todoText === '') {
     return;
   }
-  // TODO: Describe the purpose of the following lines of code.
+
+  // Add new todoText to todos array, clear the input
   todos.push(todoText);
   todoInput.value = '';
 
-  // TODO: What will happen when the following functions are called?
+  // Store updated todos in localStorage, re-render the list
   storeTodos();
   renderTodos();
 });
 
-// TODO: Describe the purpose of the following line of code.
+// Add click event to todoList element
 todoList.addEventListener('click', function (event) {
   const element = event.target;
-  // TODO: Describe the functionality of the following `if` statement.
+
+  // Checks if element is a button
   if (element.matches('button') === true) {
+    // Get its data-index value and remove the todo element from the list
     const index = element.parentElement.getAttribute('data-index');
     todos.splice(index, 1);
-    // TODO: What will happen when the following functions are called?
+
+    // Store updated todos in localStorage, re-render the list
     storeTodos();
     renderTodos();
   }
 });
 
+// Calls init to retrieve data and render it to the page on load
 init();
