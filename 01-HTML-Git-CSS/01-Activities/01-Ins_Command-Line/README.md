@@ -51,7 +51,7 @@
   ```bash
   touch index.html
   ```
-
+ 
   * 🔑 We use `ls` to check that our new file has been successfully added to the directory.
 
   ```bash
