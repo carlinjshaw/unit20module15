@@ -1,8 +1,8 @@
 # 🏗️ Module 08 Mini-Project: Zoo Animal and Employee Tracker Using TypeScript and OOP
 
-In this mini-project, you will work with a group to complete the Zoo Animal and Employee Tracking app by filling in the missing classes while using TypeScript to build a robust fault-tolerant application.
+In this mini-project, you will work with a group to complete the Zoo Animal and Employee Tracking app by filling in the missing classes while using TypeScript to build a robust and less error prone application.
 
-* As a developer, I want a robust fault-tolerant application built using TypeScript that will take in user inputs via Inquirer.js on the different animals living and employees working at the zoo.
+* As a developer, I want a robust and less error prone application built using TypeScript that will take in user input via Inquirer.js on the different animals living and employees working at the zoo.
 
 * As a developer, I want to follow the object-oriented programming (OOP) paradigm to build a modular, reuseable system for future development cycles.
 
