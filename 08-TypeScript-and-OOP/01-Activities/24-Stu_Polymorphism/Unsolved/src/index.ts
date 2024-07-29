@@ -4,11 +4,11 @@ interface Shape {
   calculatePerimeter: () => number;
 }
 
-// TODO: Define a Circle class
+// TODO: Define a Circle class with a radius property, a calculateArea method, and a calculatePerimeter method
 
-// TODO: Define a Rectangle class
+// TODO: Define a Rectangle class with a width and height property, a calculateArea method, and a calculatePerimeter method
 
-// TODO: Define a Triangle class
+// TODO: Define a Triangle class with a base, height, side1, and side2 property, a calculateArea method, and a calculatePerimeter method
 
 // Calculates the total area of an array of shapes
 function calculateTotalArea(shapes: Shape[]): number {
