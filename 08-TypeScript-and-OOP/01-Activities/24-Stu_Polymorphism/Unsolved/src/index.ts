@@ -28,10 +28,16 @@ function calculateTotalPerimeter(shapes: Shape[]): number {
   return totalPerimeter;
 }
 
-// TODO: Create instances of the Circle, Rectangle, and Triangle classes
+// Create instances of the Circle, Rectangle, and Triangle classes
+const circle = new Circle(5);
+const rectangle = new Rectangle(4, 6);
+const triangle = new Triangle(3, 4, 5, 5);
 
-// TODO: Create an array to hold all of the shapes (Circle, Rectangle, and Triangle)
+// Create an array to hold all of the shapes (Circle, Rectangle, and Triangle)
+const shapes: Shape[] = [circle, rectangle, triangle];
 
-// TODO: Display the total area of all shapes
+// Display the total area of all shapes
+console.log('Total Area:', calculateTotalArea(shapes));
 
-// TODO: Display the total perimeter of all shapes
+// Display the total perimeter of all shapes
+console.log('Total Perimeter:', calculateTotalPerimeter(shapes));
