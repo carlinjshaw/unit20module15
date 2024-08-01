@@ -1,3 +1,6 @@
+// ! With Vite we can import styles directly into our TypeScript files
+import './style.css';
+
 // ! When dynamically generating elements in TypeScript, we need to cast the element to the correct type
 const usersContainer = document.getElementById('users') as HTMLDivElement;
 const fetchButton = document.getElementById(
@@ -33,3 +36,5 @@ const createUserButton = (username: string, url: string) => {
 
   return userButton;
 };
+
+fetchButton.addEventListener('click', getUsers);
