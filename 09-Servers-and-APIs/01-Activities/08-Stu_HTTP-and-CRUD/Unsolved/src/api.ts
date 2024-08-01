@@ -16,6 +16,12 @@ class UserAPI {
     return users;
   }
 
+  async getUser(id: number): Promise<Response> {
+    const response = await fetch(`${this.REQUEST_URL}/${id}`);
+
+    return response;
+  }
+
   async createUser(user: User) {
     const response = await fetch(this.REQUEST_URL, {
       method: 'POST',
@@ -28,12 +34,18 @@ class UserAPI {
     return response;
   }
 
-  async updateUser() {
+  async updateUser(user: User): Promise<Response> {
     // TODO: Implement this method
+    const response = await fetch();
+
+    return response;
   }
 
-  async deleteUser() {
+  async deleteUser(id: number): Promise<Response> {
     // TODO: Implement this method
+    const response = await fetch();
+
+    return response;
   }
 }
 const userAPI = new UserAPI();
