@@ -6,7 +6,7 @@ export interface User {
 }
 
 class UserAPI {
-  // ! Go to https://https://retool.com/api-generator to generate a your own API endpoint
+  // ! Go to https://https://retool.com/api-generator if you want to generate your own API endpoint
   private REQUEST_URL = 'https://api-generator.retool.com/fa3Vj1/users';
 
   async getAllUsers(): Promise<User[]> {
