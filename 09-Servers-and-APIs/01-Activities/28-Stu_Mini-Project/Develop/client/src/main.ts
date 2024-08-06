@@ -56,7 +56,7 @@ const getParksByState = async (state: string) => {
   try {
     //TODO: update this function to take in the name of a state and fetch all national parks in that state.  Return the resulting array of parks.
     console.log(
-      'complete the `getParksByState` function in cilent/src/main.ts'
+      'complete the `getParksByState` function in client/src/main.ts'
     );
   } catch (err) {
     console.log('Error:', err);
@@ -65,10 +65,10 @@ const getParksByState = async (state: string) => {
 };
 
 //*Function to delete state from history
-const deledStateFromHistory = async (id: string) => {
+const deletedStateFromHistory = async (id: string) => {
   //TODO: update this function to take in the id of a saved state and delete that state from search history.
   console.log(
-    'complete the `deleteStateFromHistory` function in cilent/src/main.ts'
+    'complete the `deleteStateFromHistory` function in client/src/main.ts'
   );
 };
 
@@ -76,14 +76,14 @@ const deledStateFromHistory = async (id: string) => {
 
 const getEventsByState = async (state: string) => {
   //TODO: update this function to take in a state and fetch all events happening in national parks in that state. Return the resulting array of events.
-  console.log('complete the `getEventsByState` function in cilent/src/main.ts');
+  console.log('complete the `getEventsByState` function in client/src/main.ts');
 };
 // * Function to get saved searches
 
 const getHistory = async () => {
   try {
     //TODO: update this function to fetch all previously searched states. Return the resulting array of states.
-    console.log('complete the `getHistory` function in cilent/src/main.ts');
+    console.log('complete the `getHistory` function in client/src/main.ts');
   } catch (err) {
     console.log('Error:', err);
     return err;
@@ -318,7 +318,7 @@ const handleDeleteHistoryClick = (event: any) => {
   event.stopPropagation();
   const stateId = JSON.parse(event.target.getAttribute('data-state')).id;
   console.log(stateId);
-  deledStateFromHistory(stateId).then(getAndRenderHistory);
+  deletedStateFromHistory(stateId).then(getAndRenderHistory);
 };
 
 /*
