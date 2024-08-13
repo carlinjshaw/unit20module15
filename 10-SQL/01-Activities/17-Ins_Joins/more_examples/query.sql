@@ -5,7 +5,7 @@ ON books.author_id = authors.id;
 
 SELECT *
 FROM authors
-LEFT JOIN books 
+RIGHT JOIN books 
 ON books.author_id = authors.id;
 
 SELECT * FROM authors 
