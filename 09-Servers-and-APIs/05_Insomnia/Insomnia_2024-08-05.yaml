@@ -1,0 +1,1954 @@
+_type: export
+__export_format: 4
+__export_date: 2024-08-05T20:56:20.646Z
+__export_source: insomnia.desktop.app:v9.3.3
+resources:
+  - _id: req_fea96979e6a242d7a4a0b7051e8b689e
+    parentId: fld_0c6cf950ad034847882f8b0ad8395a5f
+    modified: 1722885042780
+    created: 1722885022874
+    url: http://localhost:3001/
+    name: /
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/9.3.3
+    authentication: {}
+    metaSortKey: -1722885022874
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_0c6cf950ad034847882f8b0ad8395a5f
+    parentId: wrk_f1f8f7b2ea5c4593ae5236357fe8f2e1
+    modified: 1722885017371
+    created: 1722885017371
+    name: 11-Ins_Express-Setup
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1722885017371
+    _type: request_group
+  - _id: wrk_f1f8f7b2ea5c4593ae5236357fe8f2e1
+    parentId: null
+    modified: 1722533031672
+    created: 1722533031672
+    name: Express 08/2024
+    description: ""
+    scope: collection
+    _type: workspace
+  - _id: req_2f57c097662746b893389182f9059e29
+    parentId: fld_0c6cf950ad034847882f8b0ad8395a5f
+    modified: 1722885057552
+    created: 1722885050996
+    url: http://localhost:3001/send
+    name: /send
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/9.3.3
+    authentication: {}
+    metaSortKey: -1718517933254
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_5a6792b7f3d940c7880de4deb11d48dc
+    parentId: fld_0c6cf950ad034847882f8b0ad8395a5f
+    modified: 1722885125998
+    created: 1722885121037
+    url: http://localhost:3001/routes
+    name: /routes
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/9.3.3
+    authentication: {}
+    metaSortKey: -1716334388444
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_6e5451b056db4c92bc809da969ade5ba
+    parentId: fld_38e7aa005e874eaea19cc2d26fae91eb
+    modified: 1722885140068
+    created: 1722885140068
+    url: http://localhost:3001/
+    name: /
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/9.3.3
+    authentication: {}
+    metaSortKey: -1722885022874
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_38e7aa005e874eaea19cc2d26fae91eb
+    parentId: wrk_f1f8f7b2ea5c4593ae5236357fe8f2e1
+    modified: 1722885140063
+    created: 1722885140063
+    name: 12-Stu_Express-Setup
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1710268239110.5
+    _type: request_group
+  - _id: req_bbe63b5f70a64dfbbd24d0eeec099109
+    parentId: fld_38e7aa005e874eaea19cc2d26fae91eb
+    modified: 1722885140072
+    created: 1722885140072
+    url: http://localhost:3001/send
+    name: /send
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/9.3.3
+    authentication: {}
+    metaSortKey: -1718517933254
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_da41e4d6f7a145538a126d3c86ea2f26
+    parentId: fld_38e7aa005e874eaea19cc2d26fae91eb
+    modified: 1722885351912
+    created: 1722885140074
+    url: http://localhost:3001/paths
+    name: /paths
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/9.3.3
+    authentication: {}
+    metaSortKey: -1716334388444
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_a462831e3b7943468c7af7ce6d1f6365
+    parentId: fld_005352d0bbf8447695d0a1818eb91f03
+    modified: 1722885424607
+    created: 1722885424607
+    url: http://localhost:3001/
+    name: /
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/9.3.3
+    authentication: {}
+    metaSortKey: -1722885022874
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_005352d0bbf8447695d0a1818eb91f03
+    parentId: wrk_f1f8f7b2ea5c4593ae5236357fe8f2e1
+    modified: 1722885424586
+    created: 1722885424586
+    name: 13-Ins_HTML-API-Routes
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1703959849980.25
+    _type: request_group
+  - _id: req_ff66dff8ee394674a2201163919c81f0
+    parentId: fld_005352d0bbf8447695d0a1818eb91f03
+    modified: 1722885455372
+    created: 1722885424610
+    url: http://localhost:3001/api
+    name: /api
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/9.3.3
+    authentication: {}
+    metaSortKey: -1718517933254
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_efdbba1de9eb4d50bd39e619beb766bb
+    parentId: fld_38e0b2a532f9473ca6444bb71d7ccc1b
+    modified: 1722885507401
+    created: 1722885507401
+    url: http://localhost:3001/api
+    name: /api
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/9.3.3
+    authentication: {}
+    metaSortKey: -1718517933254
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_38e0b2a532f9473ca6444bb71d7ccc1b
+    parentId: wrk_f1f8f7b2ea5c4593ae5236357fe8f2e1
+    modified: 1722885654730
+    created: 1722885507395
+    name: 14-Stu_HTML-API-Routes
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1703171301338.9688
+    _type: request_group
+  - _id: req_3a0e6804bfd541b68178b437d0dbcbe9
+    parentId: fld_43995c37ee2e4ed684e37c8219f8f913
+    modified: 1722885677608
+    created: 1722885612017
+    url: http://localhost:3001/api/terms
+    name: /api/terms
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/9.3.3
+    authentication: {}
+    metaSortKey: -1722885022874
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_43995c37ee2e4ed684e37c8219f8f913
+    parentId: wrk_f1f8f7b2ea5c4593ae5236357fe8f2e1
+    modified: 1722885643024
+    created: 1722885612014
+    name: 15-Ins_Path-and-Query-Params
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1702382752697.6875
+    _type: request_group
+  - _id: req_9e9d6c3a29c04152a7085e32877c3899
+    parentId: fld_43995c37ee2e4ed684e37c8219f8f913
+    modified: 1722885721760
+    created: 1722885612019
+    url: http://localhost:3001/api/terms/API
+    name: /api/terms/:term
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/9.3.3
+    authentication: {}
+    metaSortKey: -1718517933254
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_816637c54d9f43c584d96ed0b8ec6aa7
+    parentId: fld_43995c37ee2e4ed684e37c8219f8f913
+    modified: 1722885750136
+    created: 1722885739284
+    url: http://localhost:3001/api/banana
+    name: /*
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/9.3.3
+    authentication: {}
+    metaSortKey: -1717426160849
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_ae815d9ad6a347fea3e7a25e1c6ef82b
+    parentId: fld_312501a89e91449b9a0f37772ca89346
+    modified: 1722885778748
+    created: 1722885778748
+    url: http://localhost:3001/api/terms
+    name: /api/terms
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/9.3.3
+    authentication: {}
+    metaSortKey: -1722885022874
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_312501a89e91449b9a0f37772ca89346
+    parentId: wrk_f1f8f7b2ea5c4593ae5236357fe8f2e1
+    modified: 1722885778745
+    created: 1722885778745
+    name: 16-Stu_Path-and-Query-Params
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1700017106773.8438
+    _type: request_group
+  - _id: req_ae8447c71fc24a48bd7cf29c6e133173
+    parentId: fld_312501a89e91449b9a0f37772ca89346
+    modified: 1722886604598
+    created: 1722886579206
+    url: http://localhost:3001/api/terms?sort=dsc
+    name: /api/terms?sort=dsc
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/9.3.3
+    authentication: {}
+    metaSortKey: -1720701478064
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_e63b61d2cab44c658e8542c4d32c6d2c
+    parentId: fld_312501a89e91449b9a0f37772ca89346
+    modified: 1722886638026
+    created: 1722885778751
+    url: http://localhost:3001/api/term/API
+    name: /api/term/:term
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/9.3.3
+    authentication: {}
+    metaSortKey: -1718517933254
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_56f57aaeaae44b09a3ac852aa5875cf6
+    parentId: fld_312501a89e91449b9a0f37772ca89346
+    modified: 1722886698853
+    created: 1722886679023
+    url: http://localhost:3001/api/terms/networking
+    name: /api/terms/:category
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/9.3.3
+    authentication: {}
+    metaSortKey: -1717972047051.5
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_68972d314b5c4bf6ae1c4b1530d1b229
+    parentId: fld_312501a89e91449b9a0f37772ca89346
+    modified: 1722886724236
+    created: 1722885778753
+    url: http://localhost:3001/api/categories
+    name: /api/categories
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/9.3.3
+    authentication: {}
+    metaSortKey: -1717426160849
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_c29fa2069e11421fa02e6c39c0363625
+    parentId: fld_b0e7bef612144454ab7353bafca6109c
+    modified: 1722886766488
+    created: 1722886766488
+    url: http://localhost:3001/api/terms
+    name: /api/terms
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/9.3.3
+    authentication: {}
+    metaSortKey: -1722885022874
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_b0e7bef612144454ab7353bafca6109c
+    parentId: wrk_f1f8f7b2ea5c4593ae5236357fe8f2e1
+    modified: 1722886766484
+    created: 1722886766484
+    name: 17-Ins_Insomnia
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1698834283811.9219
+    _type: request_group
+  - _id: req_a497b7c407bf41e9b4a564fb3d7512d5
+    parentId: fld_b0e7bef612144454ab7353bafca6109c
+    modified: 1722886950544
+    created: 1722886766495
+    url: http://localhost:3001/api/terms/3
+    name: /api/terms/:id
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/9.3.3
+    authentication: {}
+    metaSortKey: -1720701478064
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_1a67b6d7f3b842099d82044a9ee110e0
+    parentId: fld_b0e7bef612144454ab7353bafca6109c
+    modified: 1722887147464
+    created: 1722886766491
+    url: http://localhost:3001/api/terms
+    name: /api/terms
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: >-
+        {
+        	"id": 4,
+        	"term": "DNS",
+        	"definition": "The Domain Name System is a hierarchical and decentralized naming system for computers, services, or other resources connected to the Internet or a private network. It associates various information with domain names assigned to each of the participating entities",
+        	"url": "https://en.wikipedia.org/wiki/Domain_Name_System"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/9.3.3
+    authentication: {}
+    metaSortKey: -1718517933254
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_c5b99eb08fb74418b6dfd811f4c8574a
+    parentId: fld_b0e7bef612144454ab7353bafca6109c
+    modified: 1722887221407
+    created: 1722887191720
+    url: http://localhost:3001/api/terms/2
+    name: /api/terms/:id
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: >-
+        {
+        	"term": "DNS",
+        	"definition": "The Domain Name System is a hierarchical and decentralized naming system for computers, services, or other resources connected to the Internet or a private network. It associates various information with domain names assigned to each of the participating entities",
+        	"url": "https://en.wikipedia.org/wiki/Domain_Name_System"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/9.3.3
+    authentication: {}
+    metaSortKey: -1718244990152.75
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_96dc79a3424241a5b323585847ded139
+    parentId: fld_b0e7bef612144454ab7353bafca6109c
+    modified: 1722887250233
+    created: 1722887243215
+    url: http://localhost:3001/api/terms/2
+    name: /api/terms/:id
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/9.3.3
+    authentication: {}
+    metaSortKey: -1718108518602.125
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_e6e6ced9a0ba45b0812a6f1a0ed7a1b0
+    parentId: fld_b0e7bef612144454ab7353bafca6109c
+    modified: 1722887288001
+    created: 1722886766494
+    url: http://localhost:3001/banana
+    name: /*
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/9.3.3
+    authentication: {}
+    metaSortKey: -1717426160849
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_2c04bd963e8b47c1b1719165ae6c996b
+    parentId: fld_27f8557594be411ab4b6e658818d79df
+    modified: 1722887593130
+    created: 1722887544554
+    url: http://localhost:3001/api/guests
+    name: /api/guests
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/9.3.3
+    authentication: {}
+    metaSortKey: -1722885022874
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_27f8557594be411ab4b6e658818d79df
+    parentId: wrk_f1f8f7b2ea5c4593ae5236357fe8f2e1
+    modified: 1722887544550
+    created: 1722887544550
+    name: 18-Stu_Insomnia
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1698242872330.961
+    _type: request_group
+  - _id: req_94f9280471de49e89a83dc6e52a009f3
+    parentId: fld_27f8557594be411ab4b6e658818d79df
+    modified: 1722887609764
+    created: 1722887544563
+    url: http://localhost:3001/api/guests/3
+    name: /api/guests/:id
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/9.3.3
+    authentication: {}
+    metaSortKey: -1720701478064
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_729682994ab04df1888c2959091d91ec
+    parentId: fld_27f8557594be411ab4b6e658818d79df
+    modified: 1722887716077
+    created: 1722887544558
+    url: http://localhost:3001/api/guests
+    name: /api/guests
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-2
+          {
+            "id": 4,
+            "guestName": "Jeff Goldblum",
+            "email": "jeff@gmail.com",
+            "homeAddress": "100 Oak Dr, Nashville, TN 54512"
+          }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/9.3.3
+    authentication: {}
+    metaSortKey: -1718517933254
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_1ed02ed6982444acaa063ee889e229b6
+    parentId: fld_27f8557594be411ab4b6e658818d79df
+    modified: 1722890327771
+    created: 1722887544565
+    url: http://localhost:3001/api/guests/3
+    name: /api/guests/:id
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-2
+          {
+            "id": 3,
+            "guestName": "Laura Dern",
+            "email": "laura@gmail.com",
+            "homeAddress": "100 Mulholland Dr., Los Angeles, CA 90004"
+          }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/9.3.3
+    authentication: {}
+    metaSortKey: -1718244990152.75
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_0256b296e07e4d1f8c1ea1f2993dfb36
+    parentId: fld_27f8557594be411ab4b6e658818d79df
+    modified: 1722890348681
+    created: 1722887544567
+    url: http://localhost:3001/api/guests/1
+    name: /api/guests/:id
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/9.3.3
+    authentication: {}
+    metaSortKey: -1718108518602.125
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_f3977f7e84474391af98d5451a5b57a4
+    parentId: fld_27f8557594be411ab4b6e658818d79df
+    modified: 1722887544560
+    created: 1722887544560
+    url: http://localhost:3001/banana
+    name: /*
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/9.3.3
+    authentication: {}
+    metaSortKey: -1717426160849
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_a1c3dc4faff3481fab467479224b77f0
+    parentId: fld_56192fbfcf434ac6b1c8553845c59b8a
+    modified: 1722890400104
+    created: 1722890386360
+    url: http://localhost:3001/api/contacts
+    name: /api/contacts
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/9.3.3
+    authentication: {}
+    metaSortKey: -1722885022874
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_56192fbfcf434ac6b1c8553845c59b8a
+    parentId: wrk_f1f8f7b2ea5c4593ae5236357fe8f2e1
+    modified: 1722890386356
+    created: 1722890386356
+    name: 19-Ins_FS-Try-Catch
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1697947166590.4805
+    _type: request_group
+  - _id: req_5d9852a189a741b59f916540452b3774
+    parentId: fld_56192fbfcf434ac6b1c8553845c59b8a
+    modified: 1722890479981
+    created: 1722890386369
+    url: http://localhost:3001/api/contacts/42b574bd-a687-4772-9c56-f5450293947e
+    name: /api/contacts/:id
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/9.3.3
+    authentication: {}
+    metaSortKey: -1720701478064
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_317c23633c79411ebd3300252c3f6797
+    parentId: fld_56192fbfcf434ac6b1c8553845c59b8a
+    modified: 1722890538587
+    created: 1722890386364
+    url: http://localhost:3001/api/contacts
+    name: /api/contacts
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-2
+          {
+            "contactName": "Jeff Goldblum",
+            "email": "jeff@gmail.com",
+           	"phone": "555-555-4321"
+          }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/9.3.3
+    authentication: {}
+    metaSortKey: -1718517933254
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_a2f84ab4e79f495ea0215edbe976d736
+    parentId: fld_56192fbfcf434ac6b1c8553845c59b8a
+    modified: 1722890642111
+    created: 1722890386371
+    url: http://localhost:3001/api/contacts/:id
+    name: /api/contacts/:id
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"guestName": "Laura Dern",
+        	"email": "laura@gmail.com",
+        	"phone": "555-555-7658"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/9.3.3
+    authentication: {}
+    metaSortKey: -1718244990152.75
+    isPrivate: false
+    pathParameters:
+      - name: id
+        value: ""
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_29e5f27fee2146579fd3a929715cd863
+    parentId: fld_56192fbfcf434ac6b1c8553845c59b8a
+    modified: 1722890639193
+    created: 1722890386373
+    url: http://localhost:3001/api/contacts/:id
+    name: /api/contacts/:id
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/9.3.3
+    authentication: {}
+    metaSortKey: -1718108518602.125
+    isPrivate: false
+    pathParameters:
+      - name: id
+        value: ""
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_bcd44b9a841244a3978a4b5ac93b092d
+    parentId: fld_56192fbfcf434ac6b1c8553845c59b8a
+    modified: 1722890386366
+    created: 1722890386366
+    url: http://localhost:3001/banana
+    name: /*
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/9.3.3
+    authentication: {}
+    metaSortKey: -1717426160849
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_c05baf125ed944d281f03f3831933695
+    parentId: fld_e04bab4f25ea448fa163086eb473dce1
+    modified: 1722890685042
+    created: 1722890685042
+    url: http://localhost:3001/api/contacts
+    name: /api/contacts
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/9.3.3
+    authentication: {}
+    metaSortKey: -1722885022874
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_e04bab4f25ea448fa163086eb473dce1
+    parentId: wrk_f1f8f7b2ea5c4593ae5236357fe8f2e1
+    modified: 1722890725141
+    created: 1722890685038
+    name: 20-Stu_FS-Try-Catch
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1697910203372.9204
+    _type: request_group
+  - _id: req_95c43d8028e44513ac55b568d69e0e87
+    parentId: fld_e04bab4f25ea448fa163086eb473dce1
+    modified: 1722890685051
+    created: 1722890685051
+    url: http://localhost:3001/api/contacts/42b574bd-a687-4772-9c56-f5450293947e
+    name: /api/contacts/:id
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/9.3.3
+    authentication: {}
+    metaSortKey: -1720701478064
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_eedebd4c2ac7433aa27ba17281a6ef48
+    parentId: fld_e04bab4f25ea448fa163086eb473dce1
+    modified: 1722890685046
+    created: 1722890685046
+    url: http://localhost:3001/api/contacts
+    name: /api/contacts
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-2
+          {
+            "contactName": "Jeff Goldblum",
+            "email": "jeff@gmail.com",
+           	"phone": "555-555-4321"
+          }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/9.3.3
+    authentication: {}
+    metaSortKey: -1718517933254
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_34c7ae2dc4dd4732ba4f076a71b9e739
+    parentId: fld_e04bab4f25ea448fa163086eb473dce1
+    modified: 1722890685053
+    created: 1722890685053
+    url: http://localhost:3001/api/contacts/:id
+    name: /api/contacts/:id
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"guestName": "Laura Dern",
+        	"email": "laura@gmail.com",
+        	"phone": "555-555-7658"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/9.3.3
+    authentication: {}
+    metaSortKey: -1718244990152.75
+    isPrivate: false
+    pathParameters:
+      - name: id
+        value: ""
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_3c736b95f21b443e9c67f6c51ddd9fe1
+    parentId: fld_e04bab4f25ea448fa163086eb473dce1
+    modified: 1722890685056
+    created: 1722890685056
+    url: http://localhost:3001/api/contacts/:id
+    name: /api/contacts/:id
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/9.3.3
+    authentication: {}
+    metaSortKey: -1718108518602.125
+    isPrivate: false
+    pathParameters:
+      - name: id
+        value: ""
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_b58c34f244154cffa0d688f6eb3ebb8b
+    parentId: fld_e04bab4f25ea448fa163086eb473dce1
+    modified: 1722890685049
+    created: 1722890685049
+    url: http://localhost:3001/banana
+    name: /*
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/9.3.3
+    authentication: {}
+    metaSortKey: -1717426160849
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_dab65c5f68604044b3fddbc77445d23b
+    parentId: fld_28755649e08a4f358ba564782f388d65
+    modified: 1722890815268
+    created: 1722890743013
+    url: http://localhost:3001/
+    name: /
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/9.3.3
+    authentication: {}
+    metaSortKey: -1722890815215
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_28755649e08a4f358ba564782f388d65
+    parentId: wrk_f1f8f7b2ea5c4593ae5236357fe8f2e1
+    modified: 1722890721657
+    created: 1722890712571
+    name: 21-Ins_Client-Server
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1697873240155.3604
+    _type: request_group
+  - _id: req_8e65ba95ce8646da8ebd50c997e7ba48
+    parentId: fld_f7f5e56040624fb5aaa5d4ba9c26796b
+    modified: 1722890853533
+    created: 1722890729310
+    url: http://localhost:3001/
+    name: /
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/9.3.3
+    authentication: {}
+    metaSortKey: -1722890822862
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_f7f5e56040624fb5aaa5d4ba9c26796b
+    parentId: wrk_f1f8f7b2ea5c4593ae5236357fe8f2e1
+    modified: 1722890766150
+    created: 1722890766150
+    name: 22-Stu_Client-Server
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1697762350502.6802
+    _type: request_group
+  - _id: req_928a574b92534f0a9d94a886fc7e365a
+    parentId: fld_c70270bf527543e6abbf2252be92f5c5
+    modified: 1722890858775
+    created: 1722890834004
+    url: http://localhost:3001/
+    name: /
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/9.3.3
+    authentication: {}
+    metaSortKey: -1722890822862
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_c70270bf527543e6abbf2252be92f5c5
+    parentId: wrk_f1f8f7b2ea5c4593ae5236357fe8f2e1
+    modified: 1722890834001
+    created: 1722890834001
+    name: 23-Ins_Modular-Routing
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1697706905676.34
+    _type: request_group
+  - _id: req_69052abdec304fe390a4ca9bd884d51d
+    parentId: fld_c70270bf527543e6abbf2252be92f5c5
+    modified: 1722890871816
+    created: 1722890866907
+    url: http://localhost:3001/feedback
+    name: /feedback
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/9.3.3
+    authentication: {}
+    metaSortKey: -1722890819038.5
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_b527115bbbab4a94bc159ea2c38d6b5d
+    parentId: fld_c70270bf527543e6abbf2252be92f5c5
+    modified: 1722890967367
+    created: 1722890964262
+    url: http://localhost:3001/api/tips
+    name: /api/tips
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/9.3.3
+    authentication: {}
+    metaSortKey: -1722890817126.75
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_c9ce6219b10c4b78886e08ff63e2f568
+    parentId: fld_c70270bf527543e6abbf2252be92f5c5
+    modified: 1722891027856
+    created: 1722890979770
+    url: http://localhost:3001/api/tips
+    name: /api/tips
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+            "username": "Jake",
+            "topic": "UX",
+            "tip": "Don't forget about semantic HTML tags."
+          }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/9.3.3
+    authentication: {}
+    metaSortKey: -1722890816170.875
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_d273152b98e6491bb4a2b26967cf75cf
+    parentId: fld_c70270bf527543e6abbf2252be92f5c5
+    modified: 1722891090874
+    created: 1722891045790
+    url: http://localhost:3001/api/feedback
+    name: /api/feedback
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/9.3.3
+    authentication: {}
+    metaSortKey: -1722890815692.9375
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_8380c1ea502b491a9e99ea3899d86558
+    parentId: fld_c70270bf527543e6abbf2252be92f5c5
+    modified: 1722891164659
+    created: 1722891109138
+    url: http://localhost:3001/api/feedback
+    name: /api/feedback
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        		"email": "arnold@gmail.com",
+        		"feedbackType": "Complaint",
+        		"feedback": "Font is a little small, hard to read."
+        	}
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/9.3.3
+    authentication: {}
+    metaSortKey: -1722890815453.9688
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_c607a88484e449c7bb7a131afc48cc11
+    parentId: fld_44558060a3084a39a5d35734faa3511e
+    modified: 1722891218939
+    created: 1722891218939
+    url: http://localhost:3001/
+    name: /
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/9.3.3
+    authentication: {}
+    metaSortKey: -1722890822862
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_44558060a3084a39a5d35734faa3511e
+    parentId: wrk_f1f8f7b2ea5c4593ae5236357fe8f2e1
+    modified: 1722891218934
+    created: 1722891218934
+    name: 24-Stu_Modular-Routing
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1697679183263.17
+    _type: request_group
+  - _id: req_49b5e5bec9064fe190c3daf6a6964925
+    parentId: fld_44558060a3084a39a5d35734faa3511e
+    modified: 1722891218942
+    created: 1722891218942
+    url: http://localhost:3001/feedback
+    name: /feedback
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/9.3.3
+    authentication: {}
+    metaSortKey: -1722890819038.5
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_95677b0c752e4abb8ed9fbca574f6cd1
+    parentId: fld_44558060a3084a39a5d35734faa3511e
+    modified: 1722891218943
+    created: 1722891218943
+    url: http://localhost:3001/api/tips
+    name: /api/tips
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/9.3.3
+    authentication: {}
+    metaSortKey: -1722890817126.75
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_8aea3e63ae484cb38453baf5002e8603
+    parentId: fld_44558060a3084a39a5d35734faa3511e
+    modified: 1722891218945
+    created: 1722891218945
+    url: http://localhost:3001/api/tips
+    name: /api/tips
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+            "username": "Jake",
+            "topic": "UX",
+            "tip": "Don't forget about semantic HTML tags."
+          }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/9.3.3
+    authentication: {}
+    metaSortKey: -1722890816170.875
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_17ef3449b1c248fe80bbbeb40fdee58c
+    parentId: fld_44558060a3084a39a5d35734faa3511e
+    modified: 1722891218947
+    created: 1722891218947
+    url: http://localhost:3001/api/feedback
+    name: /api/feedback
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/9.3.3
+    authentication: {}
+    metaSortKey: -1722890815692.9375
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_d620f61c379041fb93cfa5f824c61af7
+    parentId: fld_44558060a3084a39a5d35734faa3511e
+    modified: 1722891218949
+    created: 1722891218949
+    url: http://localhost:3001/api/feedback
+    name: /api/feedback
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        		"email": "arnold@gmail.com",
+        		"feedbackType": "Complaint",
+        		"feedback": "Font is a little small, hard to read."
+        	}
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/9.3.3
+    authentication: {}
+    metaSortKey: -1722890815453.9688
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_b7c755899aaa4569ad4988817159a654
+    parentId: fld_5358c4102b6b4656998d4924ef601dd4
+    modified: 1722891276185
+    created: 1722891276185
+    url: http://localhost:3001/
+    name: /
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/9.3.3
+    authentication: {}
+    metaSortKey: -1722890822862
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_5358c4102b6b4656998d4924ef601dd4
+    parentId: wrk_f1f8f7b2ea5c4593ae5236357fe8f2e1
+    modified: 1722891276115
+    created: 1722891276115
+    name: 25-Ins_Custom-Middleware
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1697665322056.585
+    _type: request_group
+  - _id: req_aad679a74b6c49bb9d3e43f6bf0f63c4
+    parentId: fld_5358c4102b6b4656998d4924ef601dd4
+    modified: 1722891276189
+    created: 1722891276189
+    url: http://localhost:3001/feedback
+    name: /feedback
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/9.3.3
+    authentication: {}
+    metaSortKey: -1722890819038.5
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_7a97f283cc794c62b9ea05660aa26f3f
+    parentId: fld_5358c4102b6b4656998d4924ef601dd4
+    modified: 1722891276205
+    created: 1722891276205
+    url: http://localhost:3001/api/tips
+    name: /api/tips
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/9.3.3
+    authentication: {}
+    metaSortKey: -1722890817126.75
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_c615262c216a41e4a85532932fcff9e7
+    parentId: fld_5358c4102b6b4656998d4924ef601dd4
+    modified: 1722891276207
+    created: 1722891276207
+    url: http://localhost:3001/api/tips
+    name: /api/tips
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+            "username": "Jake",
+            "topic": "UX",
+            "tip": "Don't forget about semantic HTML tags."
+          }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/9.3.3
+    authentication: {}
+    metaSortKey: -1722890816170.875
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_2b980e3eb7b74b51b829b6610d4c47e0
+    parentId: fld_5358c4102b6b4656998d4924ef601dd4
+    modified: 1722891276210
+    created: 1722891276210
+    url: http://localhost:3001/api/feedback
+    name: /api/feedback
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/9.3.3
+    authentication: {}
+    metaSortKey: -1722890815692.9375
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_c54fef12bcc14f7dbc5e69035cd00c4f
+    parentId: fld_5358c4102b6b4656998d4924ef601dd4
+    modified: 1722891276212
+    created: 1722891276212
+    url: http://localhost:3001/api/feedback
+    name: /api/feedback
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        		"email": "arnold@gmail.com",
+        		"feedbackType": "Complaint",
+        		"feedback": "Font is a little small, hard to read."
+        	}
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/9.3.3
+    authentication: {}
+    metaSortKey: -1722890815453.9688
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_ddea24ed15974f3ca1441a72ed2494bb
+    parentId: fld_33bcb71223b141ce932f20fbc1f23eaf
+    modified: 1722891306647
+    created: 1722891306647
+    url: http://localhost:3001/
+    name: /
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/9.3.3
+    authentication: {}
+    metaSortKey: -1722890822862
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_33bcb71223b141ce932f20fbc1f23eaf
+    parentId: wrk_f1f8f7b2ea5c4593ae5236357fe8f2e1
+    modified: 1722891306642
+    created: 1722891306642
+    name: 26-Stu_Custom-Middleware
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1697658391453.2925
+    _type: request_group
+  - _id: req_c3db6aa3b4674f05873de213b6beb163
+    parentId: fld_33bcb71223b141ce932f20fbc1f23eaf
+    modified: 1722891306650
+    created: 1722891306650
+    url: http://localhost:3001/feedback
+    name: /feedback
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/9.3.3
+    authentication: {}
+    metaSortKey: -1722890819038.5
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_511a791e438041fbb65c94c2d1754139
+    parentId: fld_33bcb71223b141ce932f20fbc1f23eaf
+    modified: 1722891306653
+    created: 1722891306653
+    url: http://localhost:3001/api/tips
+    name: /api/tips
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/9.3.3
+    authentication: {}
+    metaSortKey: -1722890817126.75
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_958241f7c04b47e8a83d236ea44bc289
+    parentId: fld_33bcb71223b141ce932f20fbc1f23eaf
+    modified: 1722891306656
+    created: 1722891306656
+    url: http://localhost:3001/api/tips
+    name: /api/tips
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+            "username": "Jake",
+            "topic": "UX",
+            "tip": "Don't forget about semantic HTML tags."
+          }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/9.3.3
+    authentication: {}
+    metaSortKey: -1722890816170.875
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_8c3754a7821a4c95b8a9b6ebc5b2fcbd
+    parentId: fld_33bcb71223b141ce932f20fbc1f23eaf
+    modified: 1722891306658
+    created: 1722891306658
+    url: http://localhost:3001/api/feedback
+    name: /api/feedback
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/9.3.3
+    authentication: {}
+    metaSortKey: -1722890815692.9375
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_a98f4f717efa4fa7b23cfc27a8bec5f2
+    parentId: fld_33bcb71223b141ce932f20fbc1f23eaf
+    modified: 1722891306659
+    created: 1722891306659
+    url: http://localhost:3001/api/feedback
+    name: /api/feedback
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        		"email": "arnold@gmail.com",
+        		"feedbackType": "Complaint",
+        		"feedback": "Font is a little small, hard to read."
+        	}
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/9.3.3
+    authentication: {}
+    metaSortKey: -1722890815453.9688
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: env_296f7aa6a774b5325509cf8468b07f856db455b6
+    parentId: wrk_f1f8f7b2ea5c4593ae5236357fe8f2e1
+    modified: 1722533031677
+    created: 1722533031677
+    name: Base Environment
+    data: {}
+    dataPropertyOrder: null
+    color: null
+    isPrivate: false
+    metaSortKey: 1722533031677
+    _type: environment
+  - _id: jar_296f7aa6a774b5325509cf8468b07f856db455b6
+    parentId: wrk_f1f8f7b2ea5c4593ae5236357fe8f2e1
+    modified: 1722533031680
+    created: 1722533031680
+    name: Default Jar
+    cookies: []
+    _type: cookie_jar

@@ -1,0 +1,169 @@
+_type: export
+__export_format: 4
+__export_date: 2024-08-12T21:13:30.941Z
+__export_source: insomnia.desktop.app:v9.3.3
+resources:
+  - _id: req_063a5524dd9649ce87b4b00a9aef8e05
+    parentId: wrk_795a064f0b9b45339a6b7e6d9d7c6600
+    modified: 1723151122347
+    created: 1723151122347
+    url: http://localhost:3001/api/review/6
+    name: UPDATE
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: >-
+        {
+        	"review": "Did you know seals are also known as pinnipeds? Didn't learn that from this film, but yeah... Anyway you can't keep your eyes off of Max von Sydow. He gives an incredible performance here."
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_a6bd8a0043ec4ce6bb4745439ccbbb8e
+    authentication: {}
+    metaSortKey: -1650304931481
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: wrk_795a064f0b9b45339a6b7e6d9d7c6600
+    parentId: null
+    modified: 1723151122302
+    created: 1723151122302
+    name: MoviesAugust2024
+    description: ""
+    scope: collection
+    _type: workspace
+  - _id: req_ad663157fc4c4f3383f545ba973961c4
+    parentId: wrk_795a064f0b9b45339a6b7e6d9d7c6600
+    modified: 1723151122344
+    created: 1723151122344
+    url: http://localhost:3001/api/movie/6
+    name: DELETE A MOVIE
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1650304839421
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_39e0b938832b443296c59d898c9da15b
+    parentId: wrk_795a064f0b9b45339a6b7e6d9d7c6600
+    modified: 1723151122330
+    created: 1723151122330
+    url: http://localhost:3001/api/movies
+    name: GET MOVIES
+    description: ""
+    method: GET
+    body:
+      mimeType: application/json
+      text: ""
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1642181245039
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_69e6e8f2091d45c0a4860b8f116b9243
+    parentId: wrk_795a064f0b9b45339a6b7e6d9d7c6600
+    modified: 1723151122342
+    created: 1723151122342
+    url: http://localhost:3001/api/new-movie
+    name: POST MOVIE
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"movie_name": "Seventh Seal"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_6906a34c6e014792bc7f5156d6ae4d45
+    authentication: {}
+    metaSortKey: -1642138873048
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_46827b421aee4a8d83a8e19623a3a454
+    parentId: wrk_795a064f0b9b45339a6b7e6d9d7c6600
+    modified: 1723151122338
+    created: 1723151122338
+    url: http://localhost:3001/api/movie-reviews
+    name: GET MOVIE REVIEWS
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1642096501057
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: env_19a0bd49f5ba4a8c87348563c56246cb
+    parentId: wrk_795a064f0b9b45339a6b7e6d9d7c6600
+    modified: 1723151122314
+    created: 1723151122314
+    name: Base Environment
+    data: {}
+    dataPropertyOrder: null
+    color: null
+    isPrivate: false
+    metaSortKey: 1642181232943
+    _type: environment
+  - _id: jar_c22abad8dd734a40bd120a79deffe47d
+    parentId: wrk_795a064f0b9b45339a6b7e6d9d7c6600
+    modified: 1723151122323
+    created: 1723151122323
+    name: Default Jar
+    cookies: []
+    _type: cookie_jar
+  - _id: spc_ed4e9f7602ee4661a094ed8a4b776976
+    parentId: wrk_795a064f0b9b45339a6b7e6d9d7c6600
+    modified: 1723151122352
+    created: 1723151122326
+    fileName: MoviesAugust2024
+    contents: ""
+    contentType: yaml
+    _type: api_spec
