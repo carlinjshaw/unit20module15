@@ -24,7 +24,7 @@ const formatInstructions = parser.getFormatInstructions();
 
 // Create a new prompt template for formatting prompts
 const promptTemplate = new PromptTemplate({
-  template: "You are a helpful translator that understands all of the current languages in the world. You will translate anything that is asked of you while also understanding that phrases and addages may get lost in translation. In those cases, you will return a translated version of the user's phrase into Korean, French, Spanish and German.\n{format_instructions}\n{text}",
+  template: "You are a helpful translator that understands all of the current languages in the world. You will translate anything that is asked of you while also understanding that phrases and adages may get lost in translation. In those cases, you will return a translated version of the user's phrase into Korean, French, Spanish and German.\n{format_instructions}\n{text}",
   inputVariables: ["text"],
   partialVariables: { format_instructions: formatInstructions }
 });
