@@ -2,7 +2,7 @@
 
 ## Before We Begin
 
-Initializing a React application using `npm create vite` is fast and simple. Like the `webpack` & `webpack-dev-server` tools we covered last unit, Vite is a tool that supports a development server which includes ES Module syntax and Hot Module Replacement (HMR), as well as a build tool which bundles your application into a production-ready setup using Rollup (a Webpack-like tool).
+Initializing a React application using `npm create vite` is fast and simple. Vite is a tool that supports a development server which includes ES Module syntax and Hot Module Replacement (HMR), as well as a build tool which bundles your application into a production-ready setup using Rollup (a Webpack-like tool if you are familiar it).
 
 ### When you would like to scaffold a new `vite` application on your own, follow these steps
 
