@@ -1,15 +1,15 @@
-// TODO: Integrate the Advertisement component into the App component below. Create two instances of the component.
-
 import './App.css'
 import Calculator from './components/Calculator';
 import Advertisement from './components/Advertisement';
+
+// TODO: Create two sets of three string variables for the Advertisement functional component's props below.
 
 function App() {
 
   return (
     <>
-      <Advertisement/>
-      <Advertisement/>
+      <Advertisement companyName={} productDescription={} price={}/>
+      <Advertisement companyName={} productDescription={} price={}/>
       <Calculator />
     </>
   )
