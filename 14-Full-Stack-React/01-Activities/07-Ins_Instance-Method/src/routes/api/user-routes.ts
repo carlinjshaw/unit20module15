@@ -1,7 +1,24 @@
 import { Router, Request, Response } from 'express';
 import { User } from '../../models/index.js';
 
-// GET /Users/:id
+// GET /users
+export const getUsers = async (_req: Request, res: Response) => {
+  
+  try {
+    const users = await User.findAll({
+      attributes: { exclude: ['password'] }
+    });
+    if (users) {
+      res.json(users);
+    } else {
+      res.status(404).json({ message: 'User not found' });
+    }
+  } catch (error: any) {
+    res.status(500).json({ message: error.message });
+  }
+};
+
+// GET /users/:id
 export const getUserById = async (req: Request, res: Response) => {
   const { id } = req.params;
   try {
@@ -18,7 +35,7 @@ export const getUserById = async (req: Request, res: Response) => {
   }
 };
 
-// POST /Users
+// POST /users
 export const createUser = async (req: Request, res: Response) => {
   const { username, email, password, numberOfPets } = req.body;
   try {
@@ -29,15 +46,17 @@ export const createUser = async (req: Request, res: Response) => {
   }
 };
 
-// PUT /Users/:id
+// PUT /users/:id
 export const updateUser = async (req: Request, res: Response) => {
   const { id } = req.params;
-  const { username, password } = req.body;
+  const { username, email, password, numberOfPets } = req.body;
   try {
     const user = await User.findByPk(id);
     if (user) {
       user.username = username;
+      user.email = email;
       user.password = password;
+      user.numberOfPets = numberOfPets;
       await user.save();
       res.json(user);
     } else {
@@ -48,7 +67,7 @@ export const updateUser = async (req: Request, res: Response) => {
   }
 };
 
-// GET /Users/:id/hasPets
+// GET /users/:id/hasPets
 export const hasPets = async (req: Request, res: Response) => {
   const { id } = req.params;
   try {
@@ -73,6 +92,9 @@ export const hasPets = async (req: Request, res: Response) => {
 };
 
 const router = Router();
+
+// GET /users/ - Get all users
+router.get('/', getUsers);
 
 // GET /users/:id - Get a user by id
 router.get('/:id', getUserById);
