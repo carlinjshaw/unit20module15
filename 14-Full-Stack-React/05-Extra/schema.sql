@@ -1,0 +1,20 @@
+DROP DATABASE IF EXISTS library_db;
+CREATE DATABASE library_db;
+
+DROP DATABASE IF EXISTS user_db;
+CREATE DATABASE user_db;
+
+DROP DATABASE IF EXISTS tech_friends_db;
+CREATE DATABASE tech_friends_db;
+
+DROP DATABASE IF EXISTS cars_db;
+CREATE DATABASE cars_db;
+
+DROP DATABASE IF EXISTS tipsnfeedback_db;
+CREATE DATABASE tipsnfeedback_db;
+
+DROP DATABASE IF EXISTS joke_db;
+CREATE DATABASE joke_db;
+
+DROP DATABASE IF EXISTS friends_db;
+CREATE DATABASE friends_db;
