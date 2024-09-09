@@ -85,7 +85,7 @@ export function ReaderFactory(sequelize: Sequelize) {
             msg: 'Please enter a password',
           },
           len: {
-            args: [8, 20],
+            args: [8, 100],
             msg: 'Your password must be between 8 and 20 characters',
           },
         },
