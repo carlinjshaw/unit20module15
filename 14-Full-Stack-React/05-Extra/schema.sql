@@ -18,3 +18,6 @@ CREATE DATABASE joke_db;
 
 DROP DATABASE IF EXISTS friends_db;
 CREATE DATABASE friends_db;
+
+DROP DATABASE IF EXISTS volunteer_db;
+CREATE DATABASE volunteer_db;
