@@ -13,7 +13,7 @@ import type { Reader } from './Reader.js';
 import type { Author } from './Author.js';
 
 /*
-! Book Model using our own interfaces
+* Book Model using our own interfaces
 
 import { DataTypes, Sequelize, Model, Optional } from 'sequelize'
 

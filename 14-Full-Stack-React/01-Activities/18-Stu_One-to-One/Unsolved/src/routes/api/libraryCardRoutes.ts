@@ -39,7 +39,7 @@ router.post('/', async (req: Request, res: Response) => {
   try {
     const locationData = await LibraryCard.create({
       ...req.body,
-      readerId: req.body.readerID
+      readerId: req.body.readerId
     });
     res.status(200).json(locationData);
   } catch (err) {

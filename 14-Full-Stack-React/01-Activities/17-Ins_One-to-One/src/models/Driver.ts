@@ -8,7 +8,7 @@ import {
 } from 'sequelize';
 
 /*
-! This is how we declared the Driver model using our own interfaces
+* This is how we declared the Driver model using our own interfaces
 
 import { DataTypes, type Sequelize, Model, type Optional } from 'sequelize';
 
@@ -28,7 +28,7 @@ export class Driver extends Model<DriverAttributes, DriverCreationAttributes> im
 
 */
 
-// ! This is how we declare the Driver model using sequelize's built-in types
+// * This is how we declare the Driver model using sequelize's built-in types
 
 export class Driver extends Model<
   InferAttributes<Driver>,

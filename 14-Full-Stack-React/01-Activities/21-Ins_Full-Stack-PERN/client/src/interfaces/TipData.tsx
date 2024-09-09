@@ -1,6 +1,6 @@
 export interface TipData {
-    id: number | null;
+    id?: number | null;
     username: string | null;
-    topic: string | null;
+    topic?: string | null;
     tip: string | null;
 }

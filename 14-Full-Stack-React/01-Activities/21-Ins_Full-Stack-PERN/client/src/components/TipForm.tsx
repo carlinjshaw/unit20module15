@@ -23,7 +23,7 @@ const TipForm = () => {
     e.preventDefault();
     try {
       // Send the tip data to the server
-      const data = await addTip(tipData);
+      await addTip(tipData);
       // Reload the page to reflect the new tip
       window.location.reload();
     } catch (err) {

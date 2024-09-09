@@ -23,7 +23,7 @@ const FeedbackForm = () => {
     e.preventDefault();
     try {
       // Send the feedback data to the server
-      const data = await addFeedback(feedbackData);
+      await addFeedback(feedbackData);
       // Reload the page to reflect the new feedback
       window.location.reload();
     } catch (err) {

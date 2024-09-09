@@ -9,7 +9,7 @@ import {
 import bcrypt from 'bcrypt';
 
 /*
-! Reader Model using our own interfaces
+* Reader Model using our own interfaces
 
 import { DataTypes, Sequelize, Model, Optional } from 'sequelize';
 interface ReaderAttributes {

@@ -11,7 +11,7 @@ import {
 import type {Reader} from './Reader.js';
 
 /*
-! LibraryCard Model using our own interfaces
+* LibraryCard Model using our own interfaces
 
 import { DataTypes, Sequelize, Model, Optional } from 'sequelize'
 

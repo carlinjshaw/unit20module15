@@ -8,7 +8,7 @@ import {
 } from 'sequelize';
 
 /*
-! User Model using our own interfaces
+* User Model using our own interfaces
 
 import { DataTypes, type Sequelize, Model, type Optional } from 'sequelize';
 
@@ -30,7 +30,7 @@ export class User extends Model<UserAttributes, UserCreationAttributes> implemen
 
 */
 
-// ! User Model using sequelize's built-in types
+// * User Model using sequelize's built-in types
 export class User extends Model<InferAttributes<User>, InferCreationAttributes<User>> {
   declare id: CreationOptional<number>;
   declare username: string;
@@ -73,6 +73,7 @@ export function UserFactory(sequelize: Sequelize) {
       },
     },
     {
+      // TODO: Add necessary hooks to hash password before create and before update
       sequelize,
       timestamps: false,
       underscored: true,

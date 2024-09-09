@@ -8,7 +8,7 @@ import {
 } from 'sequelize';
 
 /*
-! Author Model using our own interfaces
+* Author Model using our own interfaces
 
 import { DataTypes, Sequelize, Model, Optional } from 'sequelize'
 

@@ -11,7 +11,7 @@ import {
 import type { Driver } from './Driver.js';
 
 /*
-! This is how we declared the License model using our own interfaces
+* This is how we declared the License model using our own interfaces
 
 import { DataTypes, type Sequelize, Model, type Optional } from 'sequelize';
 
@@ -33,7 +33,7 @@ export class License extends Model<LicenseAttributes, LicenseCreationAttributes>
 
 */
 
-// ! This is how we declare the License model using sequelize's built-in types
+// * This is how we declare the License model using sequelize's built-in types
 
 export class License extends Model<
   InferAttributes<License>,

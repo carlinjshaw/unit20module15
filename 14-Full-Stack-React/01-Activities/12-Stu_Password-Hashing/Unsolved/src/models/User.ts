@@ -8,7 +8,7 @@ import {
 } from 'sequelize';
 
 /*
-! This is how we declared the User model using our own interfaces
+* This is how we declared the User model using our own interfaces
 
 import { DataTypes, type Sequelize, Model, type Optional } from 'sequelize';
 
@@ -30,7 +30,7 @@ export class User extends Model<UserAttributes, UserCreationAttributes> implemen
 
 */
 
-// ! This is how we declare the User model using sequelize's built-in types
+// * This is how we declare the User model using sequelize's built-in types
 export class User extends Model<
   InferAttributes<User>,
   InferCreationAttributes<User>

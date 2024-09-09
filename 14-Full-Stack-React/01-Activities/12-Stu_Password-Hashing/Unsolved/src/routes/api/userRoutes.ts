@@ -9,9 +9,9 @@ const router = Router();
 router.post('/', async (req: Request, res: Response) => {
   try {
     const newUser = req.body;
-    // ! hash the password from 'req.body' and save to newUser
+    // * hash the password from 'req.body' and save to newUser
     newUser.password = await bcrypt.hash(req.body.password, 10);
-    // ! create the newUser with the hashed password and save to DB
+    // * create the newUser with the hashed password and save to DB
     const userData = await User.create(newUser);
     res.status(200).json(userData);
   } catch (err) {

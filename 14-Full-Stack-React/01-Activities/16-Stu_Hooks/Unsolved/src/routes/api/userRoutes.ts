@@ -19,6 +19,6 @@ router.post('/', async (req: Request, res: Response) => {
   }
 });
 
-// ! We remove the `/login` route and move it to the `authRoutes.ts` file
+// * We remove the `/login` route and move it to the `authRoutes.ts` file
 
 export default router;

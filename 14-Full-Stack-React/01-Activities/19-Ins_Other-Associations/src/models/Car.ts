@@ -12,7 +12,7 @@ import type { Driver } from './Driver.js';
 
 /*
 
-! This is how we declared the Car model using our own interfaces
+* This is how we declared the Car model using our own interfaces
 
 import { DataTypes, Sequelize, Model, Optional } from 'sequelize'
 
@@ -36,7 +36,7 @@ export class Car extends Model<CarAttributes, CarCreationAttributes> implements 
 
 */
 
-// ! This is how we declare the Car model using sequelize's built-in types
+// * This is how we declare the Car model using sequelize's built-in types
 
 export class Car extends Model<
   InferAttributes<Car>,
