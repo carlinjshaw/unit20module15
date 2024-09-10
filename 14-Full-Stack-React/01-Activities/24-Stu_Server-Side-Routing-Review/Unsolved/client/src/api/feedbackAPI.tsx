@@ -63,6 +63,7 @@ const addFeedback = async (body: FeedbackData) => {
   }
 };
 
+// TODO: Fix the following fetch request implementation:
 const updateFeedback = async (id: string | undefined, body: FeedbackUpdate) => {
   try {
     const response = await fetch(`/api/feedback/`, {
@@ -85,6 +86,7 @@ const updateFeedback = async (id: string | undefined, body: FeedbackUpdate) => {
   }
 };
 
+// TODO: Fix the following fetch request implementation:
 const deleteFeedback = async (id: string | undefined) => {
   try {
     const response = await fetch(`/api/feedback/`, {

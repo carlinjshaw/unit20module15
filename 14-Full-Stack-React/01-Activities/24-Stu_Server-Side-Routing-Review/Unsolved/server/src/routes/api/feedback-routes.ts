@@ -39,6 +39,7 @@ router.post('/', async (req: Request, res: Response) => {
 });
 
 // PUT /feedback/:id - Update feedback by ID
+// TODO: Fix the following route
 router.put('/:id', async (req: Request, res: Response) => {
   try {
     const feedback = await Feedback.findByPk(req.body.id);
@@ -54,7 +55,8 @@ router.put('/:id', async (req: Request, res: Response) => {
 });
 
 // DELETE /feedback/:id - Delete feedback by ID
-router.delete('/:id', deleteFeedback = async (req: Request, res: Response) => {
+// TODO: Fix the following route
+router.delete('/:id',  async (req: Request, res: Response) => {
   try {
     const feedback = await Feedback.findByPk(req.body.id);
     if (feedback) {
