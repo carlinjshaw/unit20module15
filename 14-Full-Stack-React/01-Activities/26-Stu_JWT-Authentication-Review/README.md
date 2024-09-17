@@ -6,13 +6,13 @@ Work with a partner to resolve the following issue:
 
 ## Acceptance Criteria
 
-* It's done when the JWT is stored in `localStorage`.
-
 * It's done when the JWT can be decoded and the token's validity can be verified.
 
 * It's done when the JWT can be decoded to access the user information stored in the token.
 
 * It's done when the user information stored in the JWT can be accessed in a React component.
+
+* It's done when the token waits until the expiration instead of expiring immediately
 
 ## 📝 Notes
 
@@ -24,7 +24,7 @@ Refer to the documentation:
 
 ## 💡 Hints
 
-* Where do we store all of our client-side authentication functionality? 
+* Where do we store all of our client-side authentication functionality?
 
 * Which unit of time measurement does the JWT use compared to JavaScript?
 

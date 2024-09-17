@@ -24,6 +24,14 @@ The following image demonstrates the web application's appearance and functional
 
 * What needs to happen with the Sequelize data before it can be passed into the client side?
 
+* You will be debugging in the following files:
+
+  * `server/src/routes/api/user-routes.ts`
+
+  * `client/src/api/userAPI.tsx`
+  
+  * `client/src/pages/Home.tsx`
+
 ## 🏆 Bonus
 
 If you've completed this activity, work through the following challenge with your group to further your knowledge:

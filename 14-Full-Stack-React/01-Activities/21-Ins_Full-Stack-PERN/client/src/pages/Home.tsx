@@ -10,14 +10,14 @@ const Home = () => {
     const [tips, setTips] = useState<TipData[]>([]);
 
     // useEffect hook runs once on component mount due to empty dependency array.
-    // It calls fetchtips to retrieve and set user data.
+    // It calls fetchTips to retrieve and set user data.
     useEffect(() => {
         fetchTips();
     }, []);
 
-    // Async function fetchtips retrieves user data from an external source.
+    // Async function fetchTips retrieves user data from an external source.
     const fetchTips = async () => {
-        // Call retrievetips function which asynchronously fetches user data.
+        // Call retrieveTips function which asynchronously fetches user data.
         const data = await retrieveTips();
         // Update 'tips' state with the fetched data.
         setTips(data);

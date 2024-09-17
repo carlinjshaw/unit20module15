@@ -1,16 +1,17 @@
-import { useEffect } from 'react';
+import { useState, useEffect } from 'react';
+import type { UserData } from '../interfaces/UserData';
 import UserList from '../components/Users';
-//TODO: Import retrieveUsers from the userAPI
+// TODO: Import retrieveUsers from the userAPI
 
 const Home = () => {
-  //TODO: Set up a state to hold the user data
+  // TODO: Set up a state to hold the user data
 
   useEffect(() => {
-    //TODO: Call fetchUsers when the component mounts
+    // TODO: Call fetchUsers when the component mounts
   }, []);
 
   const fetchUsers = async () => {
-    //TODO: Call the retrieveUsers API and update your users state
+    // TODO: Call the retrieveUsers API and update your users state
   };
 
   return <UserList users={users} />;
