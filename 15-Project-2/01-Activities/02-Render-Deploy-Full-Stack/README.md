@@ -35,9 +35,7 @@ git remote add origin <REPOSITORY_URL>
 
 Follow along with the [Deploy with Render and PostgreSQL guide](https://coding-boot-camp.github.io/full-stack/render/deploy-with-render-and-postgresql) and the [Render documentation on setting environment variables](https://docs.render.com/configure-environment-variables) to connect your Render account to your Github account, with the following changes:
 
-* For the "Build Command", use the `npm run render-build` script.
-
-Your root package.json should look like:
+Your root package.json should have the following scripts:
 
 ```json
 "scripts": {
@@ -55,6 +53,10 @@ Your root package.json should look like:
     "render-start": "npm run seed && npm run start"
   },
 ```
+
+On Render:
+
+* For the "Build Command", use the `npm run render-build` script.
 
 * The "Start Command" should be set to `npm run render-start`
 
