@@ -7,17 +7,22 @@ Render only has one PostgreSQL database instance available at a time. If you wis
 * To get started, sign up for a Supabase account via email or by authenticating via your Github account.
 
 * Create an Organization:
+
 ![Creating an organization](./Images/01-supabase-org.png)
 
 * Create a Project:
+
   * Remember your Database Password!
 ![Creating a project](./Images/02-supabase-project.png)
 
 * On your project dashboard there is a green "Connect" button in the top right. There is also a link to the "Table Editor" which will be useful later.
+
 ![Project dashboard](./Images/03-project-dashboard.png)
 
 * Copy the connection string to your clip board
+
   * Note: You will need to replace the square brackets `[YOUR-PASSWORD]` with the database password you set previously (don't include the square brackets)
+
 ![Connection String](./Images/04-connection-string.png)
 
 * Continue the Render deployment as usual with the following exception. Instead of copying the "Internal Database URL" as the value to your "DB_URL" environment variable, paste the connection string with your password filled in from Supabase.
