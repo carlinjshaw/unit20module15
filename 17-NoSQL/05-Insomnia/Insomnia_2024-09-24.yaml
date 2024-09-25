@@ -1,0 +1,1920 @@
+_type: export
+__export_format: 4
+__export_date: 2024-09-24T18:16:30.497Z
+__export_source: insomnia.desktop.app:v10.0.0
+resources:
+  - _id: req_fc08bf5d025342daa7a7aef11515fd02
+    parentId: fld_441faa8c175341e6a54a7cb883568f6b
+    modified: 1727201432533
+    created: 1727201432533
+    url: http://localhost:3001/pets
+    name: Read
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1683676812087
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_441faa8c175341e6a54a7cb883568f6b
+    parentId: wrk_cf76166e0f5d496f8a00aee6820a0663
+    modified: 1727201659525
+    created: 1727201432531
+    name: "17.03: shelterDB"
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1687931973288.5
+    _type: request_group
+  - _id: wrk_cf76166e0f5d496f8a00aee6820a0663
+    parentId: null
+    modified: 1727201639236
+    created: 1727201432369
+    name: 17-NoSQL MongoDB 09/2024
+    description: ""
+    scope: collection
+    _type: workspace
+  - _id: req_db474c89c63440ab918933e559cc5fda
+    parentId: fld_441faa8c175341e6a54a7cb883568f6b
+    modified: 1727201432535
+    created: 1727201432535
+    url: http://localhost:3001/pets
+    name: Create
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"name": "Oliver",
+        	"breed": "Orange Tabby"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1683358800154.5
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_45eb9486cee8461992d498c46b22cdc3
+    parentId: fld_e6967a83a7c241078435e86e5942398e
+    modified: 1727201432551
+    created: 1727201432551
+    url: http://localhost:3001/books
+    name: Read
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/8.4.0
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1699848370158
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_e6967a83a7c241078435e86e5942398e
+    parentId: wrk_cf76166e0f5d496f8a00aee6820a0663
+    modified: 1727201669519
+    created: 1727201432545
+    name: "17.04 & 17.06: inventoryDB"
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1685878906427.25
+    _type: request_group
+  - _id: req_dd43999934874f3891e9e27a50c330f1
+    parentId: fld_e6967a83a7c241078435e86e5942398e
+    modified: 1727201432547
+    created: 1727201432547
+    url: http://localhost:3001/books/
+    name: Create
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"title": "Uzumaki",
+        	"author": "Junji Ito",
+        	"paperback": false,
+        	"pages": 225,
+        	"summer-reading-list": false
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/8.4.0
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1699848370058
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_f16d2d520e104cbfa678d146fdb0f9b1
+    parentId: fld_e6967a83a7c241078435e86e5942398e
+    modified: 1727201432549
+    created: 1727201432549
+    url: http://localhost:3001/books/seed
+    name: Create Many
+    description: ""
+    method: POST
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/8.4.0
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1699848360272
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_055448555170473da6b6459c0d56e422
+    parentId: fld_e6967a83a7c241078435e86e5942398e
+    modified: 1727201432554
+    created: 1727201432554
+    url: http://localhost:3001/delete/65528881d060fe748066273e
+    name: Delete
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: insomnia/8.4.0
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1699848355379
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_5e825df755f6469396dacd8e9427dae3
+    parentId: fld_f72823f939f84421b8fae159fcfbd861
+    modified: 1727201432559
+    created: 1727201432559
+    url: http://localhost:3001/groceries/sale-over-30
+    name: Sale over 30
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1699848350486
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_f72823f939f84421b8fae159fcfbd861
+    parentId: wrk_cf76166e0f5d496f8a00aee6820a0663
+    modified: 1727201683940
+    created: 1727201432557
+    name: "17.07, 17.11, 17.13: myGroceryDB "
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1684852372996.625
+    _type: request_group
+  - _id: req_213bd868b2534f1c96089f362f43d770
+    parentId: fld_f72823f939f84421b8fae159fcfbd861
+    modified: 1727201432568
+    created: 1727201432568
+    url: http://localhost:3001/all-items
+    name: All Items
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1699848350436
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_476837b4140a483c8a5665ebffe64d59
+    parentId: fld_f72823f939f84421b8fae159fcfbd861
+    modified: 1727201432570
+    created: 1727201432570
+    url: http://localhost:3001/all-departments
+    name: All Departments
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1699848350411
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_c82dd1d2a8884bff971818430e1f92f6
+    parentId: fld_f72823f939f84421b8fae159fcfbd861
+    modified: 1727201432563
+    created: 1727201432563
+    url: http://localhost:3001/find-wine-department
+    name: Wine
+    description: ""
+    method: GET
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"departmentId": "655286463058cafbe57f0dcc"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1699848350386
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_2705aa6000694a70a3e3b835fd86ea9b
+    parentId: fld_f72823f939f84421b8fae159fcfbd861
+    modified: 1727201432565
+    created: 1727201432565
+    url: http://localhost:3001/new-department/books
+    name: Create a department
+    description: ""
+    method: POST
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1699848350286
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_42c7d9119b4d4f03a5e64c3727fd1eda
+    parentId: fld_f72823f939f84421b8fae159fcfbd861
+    modified: 1727201432561
+    created: 1727201432561
+    url: http://localhost:3001/find-one-delete/Wine
+    name: Delete a department by name
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1699848350186
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_248deca10c64428daa7e2ec1049725ba
+    parentId: fld_8108a8d444ff400a9dd2d52658ab44b3
+    modified: 1727201432540
+    created: 1727201432540
+    url: http://localhost:3001/godzilla
+    name: Less than $10
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1683676812087
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_8108a8d444ff400a9dd2d52658ab44b3
+    parentId: wrk_cf76166e0f5d496f8a00aee6820a0663
+    modified: 1727201693260
+    created: 1727201432538
+    name: "17.08: authorListDB"
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1684339106281.3125
+    _type: request_group
+  - _id: req_45da782868f44bdc98e9d34ea69a5645
+    parentId: fld_8108a8d444ff400a9dd2d52658ab44b3
+    modified: 1727201432543
+    created: 1727201432543
+    url: http://localhost:3001/authors/featured
+    name: Featured Authors
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1683358800154.5
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_c30bce9104f444f2a55b325106731b1e
+    parentId: fld_47665abc7a63437496a40cea86d6664c
+    modified: 1727201432589
+    created: 1727201432589
+    url: http://localhost:3001/letters
+    name: Read
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1683676812087
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_47665abc7a63437496a40cea86d6664c
+    parentId: wrk_cf76166e0f5d496f8a00aee6820a0663
+    modified: 1727201699126
+    created: 1727201432587
+    name: "17.09: alphabetDB"
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1684082472923.6562
+    _type: request_group
+  - _id: req_37af3ef2c6934b88819efdbdc041701e
+    parentId: fld_44653e8e8c9340f1a41d2a1089ed1c0c
+    modified: 1727201432594
+    created: 1727201432594
+    url: http://localhost:3001/numbers
+    name: Read
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1683676812087
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_44653e8e8c9340f1a41d2a1089ed1c0c
+    parentId: wrk_cf76166e0f5d496f8a00aee6820a0663
+    modified: 1727201705562
+    created: 1727201432592
+    name: "17.10: numbersDB"
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1683954156244.8281
+    _type: request_group
+  - _id: req_90fe237e88c243c384804f7eb6446212
+    parentId: fld_a24465f8daec4a2f95aa122664dc55c7
+    modified: 1727201432598
+    created: 1727201432598
+    url: http://localhost:3001/books
+    name: All Books
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1683676812087
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_a24465f8daec4a2f95aa122664dc55c7
+    parentId: wrk_cf76166e0f5d496f8a00aee6820a0663
+    modified: 1727201711468
+    created: 1727201432596
+    name: "17.12 & 17.18: libraryDB"
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1683889997905.414
+    _type: request_group
+  - _id: req_d4ec771b132948339505626baad7e9e7
+    parentId: fld_cae4482a91ff44ebbab0151ea5ecce5b
+    modified: 1727201432575
+    created: 1727201432575
+    url: http://localhost:3001/genres/
+    name: New Genre
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"name": "Mystery"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1683825857433
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_cae4482a91ff44ebbab0151ea5ecce5b
+    parentId: wrk_cf76166e0f5d496f8a00aee6820a0663
+    modified: 1727201716671
+    created: 1727201432573
+    name: "17.14: departmentsDB"
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1683825839566
+    _type: request_group
+  - _id: req_a012e8359f2a4fb4952555834ecd1cf0
+    parentId: fld_cae4482a91ff44ebbab0151ea5ecce5b
+    modified: 1727201432577
+    created: 1727201432577
+    url: http://localhost:3001/genres/
+    name: All Genres
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1683820355063.5
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_6cdda703c47a4ff393f5b09fd9761236
+    parentId: fld_cae4482a91ff44ebbab0151ea5ecce5b
+    modified: 1727201432580
+    created: 1727201432580
+    url: http://localhost:3001/genres/Kids
+    name: Find Kids Genre
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1683817603878.75
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_0b8d35b03ef34a78b0b7d9499cbb79a4
+    parentId: fld_cae4482a91ff44ebbab0151ea5ecce5b
+    modified: 1727201432582
+    created: 1727201432582
+    url: http://localhost:3001/genres/Kids
+    name: Find One and Delete
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1683816228286.375
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_2f62aacbf1e94564a87119d58a18b5c6
+    parentId: fld_cae4482a91ff44ebbab0151ea5ecce5b
+    modified: 1727201432584
+    created: 1727201432584
+    url: http://localhost:3001/genres/Kids
+    name: Find One and Update
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"name": "Fantasy"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1683815540490.1875
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_4659e7de277345b6989b4c3c7f7e22b3
+    parentId: fld_a2e4405c0352464eb6da8fd31533ebe4
+    modified: 1727201432602
+    created: 1727201432602
+    url: http://localhost:3001/all-departments
+    name: All Departments
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1683676812087
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_a2e4405c0352464eb6da8fd31533ebe4
+    parentId: wrk_cf76166e0f5d496f8a00aee6820a0663
+    modified: 1727201722237
+    created: 1727201432600
+    name: "17.17: employeeManagerDB"
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1678702664363.5
+    _type: request_group
+  - _id: req_328bda9486c041578908b4c6a7770afe
+    parentId: fld_d44b2b12e56045eab73b11165fe5dede
+    modified: 1727201432385
+    created: 1727201432385
+    url: http://localhost:3001/items/sum-price
+    name: Metrics on Price
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1673579490358
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_d44b2b12e56045eab73b11165fe5dede
+    parentId: wrk_cf76166e0f5d496f8a00aee6820a0663
+    modified: 1727201730444
+    created: 1727201432382
+    name: "17.19 & 17.20: aggregateDB"
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1673579489161
+    _type: request_group
+  - _id: req_a3e111b5d9b64e8f9998582912fe8ed2
+    parentId: fld_d44b2b12e56045eab73b11165fe5dede
+    modified: 1727201432389
+    created: 1727201432389
+    url: http://localhost:3001/books/sum-price
+    name: All Books
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1672375248442
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_15f7ec23401e48c39aba38e6c031f42c
+    parentId: fld_efc89eef76ac4d409e445c8b196fe8c7
+    modified: 1727201432396
+    created: 1727201432396
+    url: http://localhost:3001/api/posts
+    name: All Posts
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1672375248442
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_efc89eef76ac4d409e445c8b196fe8c7
+    parentId: wrk_cf76166e0f5d496f8a00aee6820a0663
+    modified: 1727201736315
+    created: 1727201432393
+    name: "17.21: postDB"
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1672394505817
+    _type: request_group
+  - _id: req_408e212d2051451d8aff2a1fa3a253bf
+    parentId: fld_efc89eef76ac4d409e445c8b196fe8c7
+    modified: 1727201432423
+    created: 1727201432423
+    url: http://localhost:3001/api/posts/:postId
+    name: A Post
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1672224718202.5
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_9380e30dd8ef4e0492ab55149b08e224
+    parentId: fld_efc89eef76ac4d409e445c8b196fe8c7
+    modified: 1727201432419
+    created: 1727201432419
+    url: http://localhost:3001/api/posts
+    name: Create a Post
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: >-
+        	{
+        		"text": " amet ut adipiscing elit a eleifend lacinia libero curabitur libero",
+        		"username": "Sarah"
+        	}
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1672074187963
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_2d2243753c3d43478933278d717813db
+    parentId: fld_efc89eef76ac4d409e445c8b196fe8c7
+    modified: 1727201432416
+    created: 1727201432416
+    url: http://localhost:3001/api/comments
+    name: All Comments
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1671773127484
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_ad993c73ddf546ecb551a30c5219348e
+    parentId: fld_efc89eef76ac4d409e445c8b196fe8c7
+    modified: 1727201432426
+    created: 1727201432426
+    url: http://localhost:3001/api/comments/65d638e0e8074381d859ba8c
+    name: A Comment
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1671472067005
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_0962abf2fe6846a39bfb9831402999ed
+    parentId: fld_efc89eef76ac4d409e445c8b196fe8c7
+    modified: 1727201432429
+    created: 1727201432429
+    url: http://localhost:3001/api/comments
+    name: Create A Comment
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"postId": "6553c174b2a3fffbe3088c3e",
+        	"text": "Learn Piano is not very good for learning Piano",
+        	"username": "Sarah"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1671321536765.5
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_0dccac3ccb9d4d77ba058cb440e05710
+    parentId: fld_005ac4d0a7bd4c4fb1f8d0f5372d9976
+    modified: 1727201432434
+    created: 1727201432434
+    url: http://localhost:3001/api/users
+    name: All Users
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1672375248442
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_005ac4d0a7bd4c4fb1f8d0f5372d9976
+    parentId: wrk_cf76166e0f5d496f8a00aee6820a0663
+    modified: 1727201746992
+    created: 1727201432432
+    name: "17.22: userDB"
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1672246382899
+    _type: request_group
+  - _id: req_67e747c934b9449db36e1c7e8ada2e8e
+    parentId: fld_005ac4d0a7bd4c4fb1f8d0f5372d9976
+    modified: 1727201432440
+    created: 1727201432440
+    url: http://localhost:3001/api/users/:userId
+    name: A User
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1672224718202.5
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_4615066ed0264c16a9189035141aec6f
+    parentId: fld_005ac4d0a7bd4c4fb1f8d0f5372d9976
+    modified: 1727201432437
+    created: 1727201432437
+    url: http://localhost:3001/api/users
+    name: Create a User
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"first": "Wong",
+        	"last": "Kar-wai",
+        	"age": 65
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1672074187963
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_261ab84958f948c7b199ba4aa799c457
+    parentId: fld_7663d91748494642baf3ed1045fcaea6
+    modified: 1727201432445
+    created: 1727201432445
+    url: http://localhost:3001/api/users
+    name: All Users
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1672375248442
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_7663d91748494642baf3ed1045fcaea6
+    parentId: wrk_cf76166e0f5d496f8a00aee6820a0663
+    modified: 1727201754406
+    created: 1727201432443
+    name: "17.23: userPostDB"
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1672098259981
+    _type: request_group
+  - _id: req_3d47e10209324723954c14661efe302f
+    parentId: fld_7663d91748494642baf3ed1045fcaea6
+    modified: 1727201432450
+    created: 1727201432450
+    url: http://localhost:3001/api/users/6553cbae80cba8896f348b6f
+    name: A User
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1672224718202.5
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_03a84f1df3874403a64f07093eb3bf20
+    parentId: fld_7663d91748494642baf3ed1045fcaea6
+    modified: 1727201432456
+    created: 1727201432456
+    url: http://localhost:3001/api/users/
+    name: Create A User
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "first": "Spike",
+          "last": "Lee",
+          "age": 66
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1672149453082.75
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_8893a5dd0e47497da4557c167347b193
+    parentId: fld_7663d91748494642baf3ed1045fcaea6
+    modified: 1727201432458
+    created: 1727201432458
+    url: http://localhost:3001/api/posts/
+    name: All Posts
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1672036555403.125
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_36c5a74ced8242809e1b1718e21271d5
+    parentId: fld_7663d91748494642baf3ed1045fcaea6
+    modified: 1727201432453
+    created: 1727201432453
+    url: http://localhost:3001/api/posts/:postId
+    name: A Post
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1671923657723.5
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_8684092d49c4462990bc5cf71849a68a
+    parentId: fld_7663d91748494642baf3ed1045fcaea6
+    modified: 1727201432448
+    created: 1727201432448
+    url: http://localhost:3001/api/posts
+    name: Create a Post
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"userId": "65d64d5c25bd9cf78ec4e40d",
+        	"meta": {
+        		"upvotes": 156,
+        		"bookmarks": 12
+        	},
+        	"published": true,
+        	"text": "Why pineapple is awesome on Pizza: A true story"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1671848392603.75
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_416b8840a34c4607bfea8bdf9ff0238a
+    parentId: fld_a74d717dc8a64148b868e678d5b55249
+    modified: 1727201432467
+    created: 1727201432467
+    url: http://localhost:3001/api/posts
+    name: Find All Posts
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1644279310555
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_a74d717dc8a64148b868e678d5b55249
+    parentId: wrk_cf76166e0f5d496f8a00aee6820a0663
+    modified: 1727201757347
+    created: 1727201432461
+    name: "17.24: tagsDB"
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -836549129990.5
+    _type: request_group
+  - _id: req_464a19135f544284bc8ddfdb14cdb7c8
+    parentId: fld_a74d717dc8a64148b868e678d5b55249
+    modified: 1727201432469
+    created: 1727201432469
+    url: http://localhost:3001/api/posts/65d6513d743418ac57953510
+    name: Find a Post
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1644279280357.75
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_4850c4a6df3a4e699cf7cddbb677c375
+    parentId: fld_a74d717dc8a64148b868e678d5b55249
+    modified: 1727201432463
+    created: 1727201432463
+    url: http://localhost:3001/api/posts
+    name: Make a Post
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "meta": {
+            "upvotes": 156,
+            "bookmarks": 12
+          },
+          "published": true,
+          "text": "Why pineapple is awesome on Pizza: A true story",
+          "userId": "6201ce6c9598854b8991ffff"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_8cbaa9858ddb49c496d74766c3a1cfb9
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1644278827399
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_2b92c4aca4324ed3b6e7daa5dec722ad
+    parentId: fld_a74d717dc8a64148b868e678d5b55249
+    modified: 1727201432472
+    created: 1727201432472
+    url: http://localhost:3001/api/tags
+    name: Find All Tags
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1644278827349
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_2e0eed09785845b58f8f9c8890b4d8f3
+    parentId: fld_a74d717dc8a64148b868e678d5b55249
+    modified: 1727201432474
+    created: 1727201432474
+    url: http://localhost:3001/api/tags/65d6513d743418ac57953509
+    name: Find A Tag
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1644113391827.5
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_7d305541d6ca49e8a20e64137d49efb6
+    parentId: fld_a74d717dc8a64148b868e678d5b55249
+    modified: 1727201432477
+    created: 1727201432477
+    url: http://localhost:3001/api/tags/
+    name: Create A Tag
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"postId": "6553d06a1eb05eb54ebf2017",
+        	"tagName": "#ebdebe",
+        	"color": "#ebdebe",
+        	"getTagCss": "color: #ebdebe"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1644030674066.75
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_db992d70730743b19d9d0a36d490dde2
+    parentId: fld_2de812ff5adf4062a5521742e8bed448
+    modified: 1727201432481
+    created: 1727201432481
+    url: http://localhost:3001/api/users
+    name: Find All Users
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1644290547468
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_2de812ff5adf4062a5521742e8bed448
+    parentId: wrk_cf76166e0f5d496f8a00aee6820a0663
+    modified: 1727201762098
+    created: 1727201432479
+    name: "17.25: videoDB"
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -418774564995.25
+    _type: request_group
+  - _id: req_c9bf7b63f66349139c0d2d4711180e6b
+    parentId: fld_2de812ff5adf4062a5521742e8bed448
+    modified: 1727201432489
+    created: 1727201432489
+    url: http://localhost:3001/api/users/65d65806950600b874dd4442
+    name: Find A User
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1644290037975
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_09da91228e8447f282121451fc731774
+    parentId: fld_2de812ff5adf4062a5521742e8bed448
+    modified: 1727201432491
+    created: 1727201432491
+    url: http://localhost:3001/api/users/
+    name: Post A User
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        		"first": "Kiyoshi",
+        	"last": "Kurosawa",
+        	"age": 68
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1644289783228.5
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_2951d707026140b8b1dffed825b0ffc7
+    parentId: fld_2de812ff5adf4062a5521742e8bed448
+    modified: 1727201432484
+    created: 1727201432484
+    url: http://localhost:3001/api/videos
+    name: Find All Videos
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1644289528482
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_56613e60014f459caf6810e2014dd58c
+    parentId: fld_2de812ff5adf4062a5521742e8bed448
+    modified: 1727201432494
+    created: 1727201432494
+    url: http://localhost:3001/api/videos/65d65817950600b874dd4445
+    name: Find A Video
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1644289512560.3438
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_e88cbe333d954b0b866fa598b09dab23
+    parentId: fld_2de812ff5adf4062a5521742e8bed448
+    modified: 1727201432486
+    created: 1727201432486
+    url: http://localhost:3001/api/videos/
+    name: Post a Video
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "userId": "65d65806950600b874dd4442",
+          "published": true,
+          "advertiserFriendly": false,
+          "description": "How to edit not like a pro"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_59efcd5f80e444568b1992e75e0e4d2d
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1644289018989
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_188210e0cc574156a5806edef195e433
+    parentId: fld_2de812ff5adf4062a5521742e8bed448
+    modified: 1727201432496
+    created: 1727201432496
+    url: http://localhost:3001/api/videos/:videoId
+    name: Update a Video
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "userId": "63c0dbb2c62a95c3a82264c1",
+          "published": true,
+          "advertiserFriendly": false,
+          "description": "How to stop procrastinating"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_59efcd5f80e444568b1992e75e0e4d2d
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1644288891615.75
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_0e7032356b394af28e80e47149a782a5
+    parentId: fld_2de812ff5adf4062a5521742e8bed448
+    modified: 1727201432498
+    created: 1727201432498
+    url: http://localhost:3001/api/videos/:videoId
+    name: Delete a Video
+    description: ""
+    method: DELETE
+    body:
+      mimeType: application/json
+      text: ""
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_59efcd5f80e444568b1992e75e0e4d2d
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1644288827929.125
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_9f4358a15a104c6990ff7cd94ab21812
+    parentId: fld_2de812ff5adf4062a5521742e8bed448
+    modified: 1727201432500
+    created: 1727201432500
+    url: http://localhost:3001/api/videos/65d65817950600b874dd4445/responses
+    name: Add a response
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"responseBody": "Great content",
+        	"username": "Dave"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_59efcd5f80e444568b1992e75e0e4d2d
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1644288796085.8125
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_c8c5706b29e7485db3619d6a9caa698b
+    parentId: fld_2de812ff5adf4062a5521742e8bed448
+    modified: 1727201432502
+    created: 1727201432502
+    url: http://localhost:3001/api/videos/65d65817950600b874dd4445/responses/65d65859950600b874dd4456
+    name: Delete a response
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1644288780164.1562
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_ce87ae31325d45e6908cfc709c025cc1
+    parentId: fld_cfa2dc0292564cd68041800fcc4b9971
+    modified: 1727201432508
+    created: 1727201432508
+    url: http://localhost:3001/api/users/
+    name: Find All Users
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1644290547668
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_cfa2dc0292564cd68041800fcc4b9971
+    parentId: wrk_cf76166e0f5d496f8a00aee6820a0663
+    modified: 1727201768520
+    created: 1727201432506
+    name: "17.26: devDB"
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1000000000
+    _type: request_group
+  - _id: req_6421a2f8ced74955b45b9cb98885fe44
+    parentId: fld_cfa2dc0292564cd68041800fcc4b9971
+    modified: 1727201432526
+    created: 1727201432526
+    url: http://localhost:3001/api/users/
+    name: Post A User
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        		"first": "Kathryn",
+        	"last": "Bigelow",
+        	"age": 71
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1644290547618
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_cbbd955459c34384b76227bff330aa4a
+    parentId: fld_cfa2dc0292564cd68041800fcc4b9971
+    modified: 1727201432529
+    created: 1727201432529
+    url: http://localhost:3001/api/users/:userId
+    name: Find A User
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1644290547568
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_7d69c547399a4c4bbad680688698a802
+    parentId: fld_cfa2dc0292564cd68041800fcc4b9971
+    modified: 1727201432510
+    created: 1727201432510
+    url: http://localhost:3001/api/apps/
+    name: Find All Apps
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1644289528482
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_d773cc312ac44a718bc11a28233b1ffd
+    parentId: fld_cfa2dc0292564cd68041800fcc4b9971
+    modified: 1727201432524
+    created: 1727201432524
+    url: http://localhost:3001/api/apps/
+    name: Add an App
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"userId": "65d65a70aebac29808e6c810",
+        	"description": "The History of You",
+        	"published": true,
+        	"buildSuccess": true
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1644289496638.6875
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_80a9ead2d3d24deb8ce2c8a292b95fe9
+    parentId: fld_cfa2dc0292564cd68041800fcc4b9971
+    modified: 1727201432517
+    created: 1727201432517
+    url: http://localhost:3001/api/apps/:appId
+    name: Get a Single App
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1644289464795.375
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_319625db6ba341a8bbabb8a58bcf67bf
+    parentId: fld_cfa2dc0292564cd68041800fcc4b9971
+    modified: 1727201432519
+    created: 1727201432519
+    url: http://localhost:3001/api/apps/:appId
+    name: Update a Single App
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"userId": "63c0df4ea43c91ebcfa0efca",
+        	"description": "The History of Things"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1644289146362.25
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_0f7e9c5a63a24efd899d830233e809e6
+    parentId: fld_cfa2dc0292564cd68041800fcc4b9971
+    modified: 1727201432522
+    created: 1727201432522
+    url: http://localhost:3001/api/apps/:appId
+    name: Delete a Single App
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1644289082675.625
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_35c126fef99a42719838e5d4e548fcfc
+    parentId: fld_cfa2dc0292564cd68041800fcc4b9971
+    modified: 1727201432512
+    created: 1727201432512
+    url: http://localhost:3001/api/apps/:appId/tags
+    name: Add a Tag to an App
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"tagBody": "React",
+          "published": true,
+          "advertiserFriendly": false,
+          "description": "CRUD methods in Mongoose"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_59efcd5f80e444568b1992e75e0e4d2d
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1644289018989
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_d3a61f69359144d7abd0b76bc63deea8
+    parentId: fld_cfa2dc0292564cd68041800fcc4b9971
+    modified: 1727201432515
+    created: 1727201432515
+    url: http://localhost:3001/api/apps/:appId/tags/:tagId
+    name: Delete a Tag
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1644288764242.5
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: env_e11ff7dd0e5d4bfaaf682d0a74c790ef
+    parentId: wrk_cf76166e0f5d496f8a00aee6820a0663
+    modified: 1727201432372
+    created: 1727201432372
+    name: Base Environment
+    data: {}
+    dataPropertyOrder: null
+    color: null
+    isPrivate: false
+    metaSortKey: 1643938871219
+    _type: environment
+  - _id: jar_1217eee8dc494d548d24b52223a26137
+    parentId: wrk_cf76166e0f5d496f8a00aee6820a0663
+    modified: 1727201432377
+    created: 1727201432377
+    name: Default Jar
+    cookies: []
+    _type: cookie_jar
+  - _id: spc_b985f6e3191e4bfc9ea17fd5bfff30ec
+    parentId: wrk_cf76166e0f5d496f8a00aee6820a0663
+    modified: 1727201432610
+    created: 1727201432609
+    fileName: 18-NoSQL MongoDB 09/2024
+    contents: ""
+    contentType: yaml
+    _type: api_spec
