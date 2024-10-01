@@ -49,6 +49,6 @@ applicationSchema
   });
 
 // Initialize our Application model
-const Application = model('application', applicationSchema);
+const Application = model('Application', applicationSchema);
 
 export default Application;

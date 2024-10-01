@@ -48,6 +48,6 @@ videoSchema
   });
 
 // Initialize our Video model
-const Video = model('video', videoSchema);
+const Video = model('Video', videoSchema);
 
 export default Video;

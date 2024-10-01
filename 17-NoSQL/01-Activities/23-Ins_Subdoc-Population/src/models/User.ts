@@ -17,7 +17,7 @@ const userSchema = new Schema(
     posts: [
       {
         type: Schema.Types.ObjectId,
-        ref: 'post',
+        ref: 'Post',
       },
     ],
   },
@@ -46,6 +46,6 @@ userSchema
   });
 
 // Initialize our User model
-const User = model('user', userSchema);
+const User = model('User', userSchema);
 
 export default User;
