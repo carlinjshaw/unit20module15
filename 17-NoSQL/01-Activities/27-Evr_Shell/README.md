@@ -234,8 +234,6 @@ In your spare time, explore the scripts in the `Solved` directory to see what el
 
 To learn more about shell scripts, explore the following resources:
 
-* [The Bash Hackers Wiki](https://wiki.bash-hackers.org/)
-
 * [Learn X in Y Minutes, where X Equals Bash](https://learnxinyminutes.com/docs/bash/)
 
 * [Bash Scripting Cheatsheet from DevHints.io](https://devhints.io/bash)
