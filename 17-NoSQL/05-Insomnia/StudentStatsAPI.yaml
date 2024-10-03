@@ -1,0 +1,504 @@
+_type: export
+__export_format: 4
+__export_date: 2024-10-03T19:39:31.047Z
+__export_source: insomnia.desktop.app:v10.0.0
+resources:
+  - _id: req_06e4683c39654fbf8fa1bfd56773e815
+    parentId: fld_247ccd52c84344a8bf36874cf8d044c1
+    modified: 1727381521400
+    created: 1727381521400
+    url: http://localhost:3001/api/students
+    name: GET Students
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1643944303214
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_247ccd52c84344a8bf36874cf8d044c1
+    parentId: wrk_fc3adced46f945dcad40ad6f93664892
+    modified: 1727381521398
+    created: 1727381521398
+    name: Students
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1643946332592
+    _type: request_group
+  - _id: wrk_fc3adced46f945dcad40ad6f93664892
+    parentId: null
+    modified: 1727381521360
+    created: 1727381521360
+    name: Student Stats MiniProject  09/2024
+    description: ""
+    scope: collection
+    _type: workspace
+  - _id: req_42d1fb05bcda4677b536f1728ce7f906
+    parentId: fld_247ccd52c84344a8bf36874cf8d044c1
+    modified: 1727381521412
+    created: 1727381521412
+    url: http://localhost:3001/api/students
+    name: POST Create A Student
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        			"first": "Crispin",
+        			"last": "Glover",
+        			"github": "CGlover",
+        			"assignments": [
+        				{
+        					"_id": "61fca0f0e2c281ee2122670f",
+        					"assignmentId": "61fca0f0e2c281ee21226710",
+        					"createdAt": "2022-02-04T03:43:44.341Z",
+        					"assignmentName": "Monopoly Money Manager",
+        					"score": 92
+        				},
+        				{
+        					"_id": "61fca0f0e2c281ee21226711",
+        					"assignmentId": "61fca0f0e2c281ee21226712",
+        					"createdAt": "2022-02-04T03:43:44.341Z",
+        					"assignmentName": "Starbase Defender",
+        					"score": 73
+        				},
+        				{
+        					"_id": "61fca0f0e2c281ee21226713",
+        					"assignmentId": "61fca0f0e2c281ee21226714",
+        					"createdAt": "2022-02-04T03:43:44.341Z",
+        					"assignmentName": "Decision Tracker",
+        					"score": 71
+        				},
+        				{
+        					"_id": "61fca0f0e2c281ee21226715",
+        					"assignmentId": "61fca0f0e2c281ee21226716",
+        					"createdAt": "2022-02-04T03:43:44.341Z",
+        					"assignmentName": "Hello world",
+        					"score": 89
+        				},
+        				{
+        					"_id": "61fca0f0e2c281ee21226717",
+        					"assignmentId": "61fca0f0e2c281ee21226718",
+        					"createdAt": "2022-02-04T03:43:44.342Z",
+        					"assignmentName": "Hello world",
+        					"score": 70
+        				},
+        				{
+        					"_id": "61fca0f0e2c281ee21226719",
+        					"assignmentId": "61fca0f0e2c281ee2122671a",
+        					"createdAt": "2022-02-04T03:43:44.342Z",
+        					"assignmentName": "Running app",
+        					"score": 75
+        				},
+        				{
+        					"_id": "61fca0f0e2c281ee2122671b",
+        					"assignmentId": "61fca0f0e2c281ee2122671c",
+        					"createdAt": "2022-02-04T03:43:44.342Z",
+        					"assignmentName": "Learn Piano",
+        					"score": 70
+        				},
+        				{
+        					"_id": "61fca0f0e2c281ee2122671d",
+        					"assignmentId": "61fca0f0e2c281ee2122671e",
+        					"createdAt": "2022-02-04T03:43:44.342Z",
+        					"assignmentName": "Find My Phone",
+        					"score": 95
+        				},
+        				{
+        					"_id": "61fca0f0e2c281ee2122671f",
+        					"assignmentId": "61fca0f0e2c281ee21226720",
+        					"createdAt": "2022-02-04T03:43:44.342Z",
+        					"assignmentName": "Deliveries",
+        					"score": 89
+        				},
+        				{
+        					"_id": "61fca0f0e2c281ee21226721",
+        					"assignmentId": "61fca0f0e2c281ee21226722",
+        					"createdAt": "2022-02-04T03:43:44.342Z",
+        					"assignmentName": "Monopoly Money Manager",
+        					"score": 71
+        				},
+        				{
+        					"_id": "61fca0f0e2c281ee21226723",
+        					"assignmentId": "61fca0f0e2c281ee21226724",
+        					"createdAt": "2022-02-04T03:43:44.342Z",
+        					"assignmentName": "Decision Tracker",
+        					"score": 87
+        				},
+        				{
+        					"_id": "61fca0f0e2c281ee21226725",
+        					"assignmentId": "61fca0f0e2c281ee21226726",
+        					"createdAt": "2022-02-04T03:43:44.342Z",
+        					"assignmentName": "Poker",
+        					"score": 90
+        				},
+        				{
+        					"_id": "61fca0f0e2c281ee21226727",
+        					"assignmentId": "61fca0f0e2c281ee21226728",
+        					"createdAt": "2022-02-04T03:43:44.342Z",
+        					"assignmentName": "Firefox",
+        					"score": 98
+        				},
+        				{
+        					"_id": "61fca0f0e2c281ee21226729",
+        					"assignmentId": "61fca0f0e2c281ee2122672a",
+        					"createdAt": "2022-02-04T03:43:44.342Z",
+        					"assignmentName": "Firefox",
+        					"score": 86
+        				},
+        				{
+        					"_id": "61fca0f0e2c281ee2122672b",
+        					"assignmentId": "61fca0f0e2c281ee2122672c",
+        					"createdAt": "2022-02-04T03:43:44.342Z",
+        					"assignmentName": "Movie trailers",
+        					"score": 91
+        				},
+        				{
+        					"_id": "61fca0f0e2c281ee2122672d",
+        					"assignmentId": "61fca0f0e2c281ee2122672e",
+        					"createdAt": "2022-02-04T03:43:44.342Z",
+        					"assignmentName": "Starbase Defender",
+        					"score": 75
+        				},
+        				{
+        					"_id": "61fca0f0e2c281ee2122672f",
+        					"assignmentId": "61fca0f0e2c281ee21226730",
+        					"createdAt": "2022-02-04T03:43:44.342Z",
+        					"assignmentName": "Running app",
+        					"score": 75
+        				},
+        				{
+        					"_id": "61fca0f0e2c281ee21226731",
+        					"assignmentId": "61fca0f0e2c281ee21226732",
+        					"createdAt": "2022-02-04T03:43:44.342Z",
+        					"assignmentName": "Firefox",
+        					"score": 99
+        				},
+        				{
+        					"_id": "61fca0f0e2c281ee21226733",
+        					"assignmentId": "61fca0f0e2c281ee21226734",
+        					"createdAt": "2022-02-04T03:43:44.343Z",
+        					"assignmentName": "Running app",
+        					"score": 97
+        				},
+        				{
+        					"_id": "61fca0f0e2c281ee21226735",
+        					"assignmentId": "61fca0f0e2c281ee21226736",
+        					"createdAt": "2022-02-04T03:43:44.343Z",
+        					"assignmentName": "Cooking app",
+        					"score": 88
+        				}
+        			]
+        		}
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_d1ba94acb1084e1886ba9d8ddc97f015
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1643943836451.25
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_31fd78dc31684f9cba88b548842bec53
+    parentId: fld_247ccd52c84344a8bf36874cf8d044c1
+    modified: 1727981321025
+    created: 1727381521403
+    url: http://localhost:3001/api/students/66f5c18fd57166715333c7f3
+    name: GET A Student
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1643943369688.5
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_0c05db535e1244a8b78ace54a5fd6c2d
+    parentId: fld_247ccd52c84344a8bf36874cf8d044c1
+    modified: 1727981329044
+    created: 1727381521409
+    url: http://localhost:3001/api/students/:studentId
+    name: DELETE A Student
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1643943136307.125
+    isPrivate: false
+    pathParameters:
+      - name: studentId
+        value: ""
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_4d2b0533b69343e890d7dcda9ce66a44
+    parentId: fld_247ccd52c84344a8bf36874cf8d044c1
+    modified: 1727981343752
+    created: 1727381521405
+    url: http://localhost:3001/api/students/:studentId/assignments
+    name: POST A Student's Assignment
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"name": "Hello world",
+        	"score": 95,
+        	"assignmentId": "66c8d194bc3baa1241f27624",
+        	"createdAt": "2024-08-23T18:14:45.016Z",
+        	"updatedAt": "2024-08-23T18:14:45.016Z"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1643942902925.75
+    isPrivate: false
+    pathParameters:
+      - name: studentId
+        value: ""
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_7118b3427fac4758bdbfd42da3ee3569
+    parentId: fld_247ccd52c84344a8bf36874cf8d044c1
+    modified: 1727981367950
+    created: 1727381521407
+    url: http://localhost:3001/api/students/:studentId/assignments/:assignmentId
+    name: DELETE A Student's Assignment
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1643942669544.375
+    isPrivate: false
+    pathParameters:
+      - name: studentId
+        value: ""
+      - name: assignmentId
+        value: ""
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_786057256f554c11b64cb1221a72f737
+    parentId: fld_8cf925c41f09459e81b9a2e74f9e98d7
+    modified: 1727381521383
+    created: 1727381521383
+    url: http://localhost:3001/api/courses/
+    name: GET Courses
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1643946170308.75
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_8cf925c41f09459e81b9a2e74f9e98d7
+    parentId: wrk_fc3adced46f945dcad40ad6f93664892
+    modified: 1727381521379
+    created: 1727381521379
+    name: Courses
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1643946324315
+    _type: request_group
+  - _id: req_5b9ffe3683a04983809ce02cf9be287f
+    parentId: fld_8cf925c41f09459e81b9a2e74f9e98d7
+    modified: 1727381521387
+    created: 1727381521387
+    url: http://localhost:3001/api/courses/:courseId
+    name: GET A Course
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1643946170305.625
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_ee836af18bcb41a4bf46ea4e3ac459c1
+    parentId: fld_8cf925c41f09459e81b9a2e74f9e98d7
+    modified: 1727381521393
+    created: 1727381521393
+    url: http://localhost:3001/api/courses/:courseId
+    name: Update A Course
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"courseName": "ThreeJS",
+        	"inPerson": false,
+        	"endDate": "2023-08-03T16:11:23.656Z",
+        	"students": ["645da46f033a0827637f9a68"]
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1643946170302.5
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_e6bfad7a45e6495b82ecbc5f62114691
+    parentId: fld_8cf925c41f09459e81b9a2e74f9e98d7
+    modified: 1727381521396
+    created: 1727381521396
+    url: http://localhost:3001/api/courses/:courseId
+    name: Delete A Course
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1643946170296.25
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_40887acac7cf4bfea4944a99e0cb4e5c
+    parentId: fld_8cf925c41f09459e81b9a2e74f9e98d7
+    modified: 1727982968199
+    created: 1727381521390
+    url: http://localhost:3001/api/courses/
+    name: Create A Course
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"name": "Learning Your DAW",
+        	"inPerson": false,
+        	"students": [
+        		"645da4fe053455fb00d5c06b"
+        	]
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    preRequestScript: ""
+    metaSortKey: -1643946170290
+    isPrivate: false
+    pathParameters: []
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: env_ad2d96463db34f499516eb7b0becba54
+    parentId: wrk_fc3adced46f945dcad40ad6f93664892
+    modified: 1727381521362
+    created: 1727381521362
+    name: Base Environment
+    data: {}
+    dataPropertyOrder: null
+    color: null
+    isPrivate: false
+    metaSortKey: 1643946093576
+    _type: environment
+  - _id: jar_5359366bfb5e451fba79b99238ff8b61
+    parentId: wrk_fc3adced46f945dcad40ad6f93664892
+    modified: 1727381521366
+    created: 1727381521366
+    name: Default Jar
+    cookies: []
+    _type: cookie_jar
+  - _id: spc_a985c5eaa0394d0e8d761d07bc4e922c
+    parentId: wrk_fc3adced46f945dcad40ad6f93664892
+    modified: 1727381521416
+    created: 1727381521371
+    fileName: Student Stats MiniProject  09/2024
+    contents: ""
+    contentType: yaml
+    _type: api_spec
