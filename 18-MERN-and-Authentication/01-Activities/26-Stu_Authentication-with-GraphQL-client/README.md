@@ -12,7 +12,6 @@ Work with a partner to add comments describing the functionality of the code fou
 
 * [Profile.tsx](./Unsolved/client/src/pages/Profile.tsx)
 
-
 ## 📝 Notes
 
 Refer to this file for hints:
