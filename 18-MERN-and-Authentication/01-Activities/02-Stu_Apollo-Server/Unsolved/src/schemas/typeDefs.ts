@@ -1,4 +1,6 @@
-const typeDefs = `
+import gql from 'graphql-tag';
+
+const typeDefs = gql`
   # TODO: Add a comment describing the functionality of this statement
   type Class {
     _id: ID
