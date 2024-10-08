@@ -26,8 +26,8 @@ To reproduce the problem, follow these steps:
 
     ```json
     {
-      "email": "lernantino@techfriends.dev",
-      "password": "password10"
+      "email": "jolly@guru.com",
+      "password": "password"
     }
     ```
 
