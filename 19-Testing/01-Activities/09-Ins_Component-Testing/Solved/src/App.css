@@ -58,5 +58,9 @@
 }
 
 .advertisement {
-  background-color: lightblue;
+  background-color: #4c4747;
+  border: 3px solid #000;
+  border-radius: 5px;
+  padding: 1rem;
+  margin: 1rem 0;
 }
