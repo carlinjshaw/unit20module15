@@ -38,9 +38,17 @@ declare global {
   }
 }
 
+// Allows us to add a custom Cypress command
+// We are creating our own version of Cypress' mount
+// Because we are using React Router we need to customize the built in mount method 
 Cypress.Commands.add('mount', (component, options = {}) => {
+
+  // Destructure options to extract routerProps so that we can add an initialEntries of / to it.
+  // We spread the rest of the mountOptions if there are any so they don't get left behind
   const { routerProps = { initialEntries: ['/'] }, ...mountOptions } = options;
 
+  // We pass in routerProps so that any initialEntries URLs are saved in memory vs having the actual browser keep track of it.
+  // Any components that pass through our custom mount method pass through MemoryRouter as props children,
   const wrapped = <MemoryRouter {...routerProps}>{component}</MemoryRouter>
 
   return mount(wrapped, mountOptions)

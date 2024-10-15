@@ -1,4 +1,3 @@
-import React from 'react'
 import Footer from '../../client/src/components/Footer/index'
 
 describe('<Footer />', () => {

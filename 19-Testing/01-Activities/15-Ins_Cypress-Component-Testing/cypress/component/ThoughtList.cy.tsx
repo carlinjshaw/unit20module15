@@ -1,4 +1,3 @@
-import React from 'react';
 import ThoughtList from '../../client/src/components/ThoughtList';
 
 const thoughts = [
