@@ -101,7 +101,7 @@
   {
     "question": "What does the range function do?",
     "answers": [
-      { "text": "Generates a list of numbers", "isCorrect": true },
+      { "text": "Generates a set", "isCorrect": false },
       { "text": "Creates an iterator that generates a sequence of numbers", "isCorrect": true },
       { "text": "Creates a list of tuples", "isCorrect": false },
       { "text": "Generates random numbers", "isCorrect": false }
