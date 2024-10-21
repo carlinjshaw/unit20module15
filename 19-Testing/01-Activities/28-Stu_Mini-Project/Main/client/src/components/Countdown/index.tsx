@@ -1,7 +1,7 @@
 interface CountdownProps {
   guesses?: number;
   isCorrect?: boolean;
-  hasGuessed: boolean;
+  hasGuessed?: boolean;
 }
 
 const Countdown = ({ guesses, isCorrect, hasGuessed }: CountdownProps) => {

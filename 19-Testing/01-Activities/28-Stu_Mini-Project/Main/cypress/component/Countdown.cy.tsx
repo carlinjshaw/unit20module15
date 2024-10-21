@@ -1,5 +1,5 @@
-import React from 'react'
-import Countdown from '../../client/src/components/Countdown/index'
+
+import Countdown from '../../client/src/components/Countdown'
 
 describe('<Countdown />', () => {
   it('should initially render with a maximum of 9 guesses', () => {

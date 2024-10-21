@@ -1,5 +1,4 @@
-import React from 'react'
-import Keyboard from '../../client/src/components/Keyboard/index'
+import Keyboard from '../../client/src/components/Keyboard'
 import KEYS from '../fixtures/keys.json'
 
 describe('<Keyboard />', () => {
