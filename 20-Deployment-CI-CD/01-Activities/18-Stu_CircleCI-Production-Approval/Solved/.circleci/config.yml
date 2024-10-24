@@ -54,7 +54,7 @@ workflows:
           requires:
             - deploy-to-render-staging
       - deploy-to-render-production:
-          # We can specify that the only requirement for this job is the hold job because the the hold job requires the deploy-render-staging job to run first, and the deploy-render-staging job requires the run-e2e-tests and run-component-tests jobs to run first. The hold job acts as a gatekeeper to the deploy-render-production job.
+          # We can specify that the only requirement for this job is the hold job because the the hold job requires the deploy-render-staging job to run first, and the deploy-render-staging job requires the run-component-tests jobs to run first. The hold job acts as a gatekeeper to the deploy-render-production job.
           requires:
             - hold
           filters:
