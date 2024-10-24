@@ -10,9 +10,9 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 // Creates a new department
-app.post('/departments', (req, res) => {
+app.post('/departments', async (req, res) => {
   const newDepartment = new Department({ name: req.body.name });
-  newDepartment.save();
+  await newDepartment.save();
   if (newDepartment) {
     res.status(201).json(newDepartment);
   } else {

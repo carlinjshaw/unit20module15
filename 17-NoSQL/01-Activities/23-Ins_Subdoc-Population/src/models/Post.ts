@@ -48,6 +48,6 @@ postSchema
   });
 
 // Initialize our Post model
-const Post = model('post', postSchema);
+const Post = model('Post', postSchema);
 
 export default Post;

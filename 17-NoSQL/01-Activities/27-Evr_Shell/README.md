@@ -6,13 +6,13 @@ Throughout our work, we've used the command line to perform important tasks. The
 
 The **Unix shell environment** serves as a layer between ourselves and our computers and gives us access to commands that are built into our systems. We actually know this already because we've been using some of these all along; commands such as `touch`, `mkdir`, and `cd` are all Unix shell commands that allow us to communicate with our computers. However, interactivity like this is just one part of the shell environment. We can also use the shell environment to run programs, much like Node.js, in the form of shell scripts.
 
-A Unix shell script has its own syntax, which might feel familiar to commands we've written using JavaScript. While Node.js has many modules that allow us to execute similar commands, shell scripts allow us to write more universal and lightweight functionality to perform and automate tasks that JavaScript may not be as well-suited for. 
+A Unix shell script has its own syntax, which might feel familiar to commands we've written using JavaScript. While Node.js has many modules that allow us to execute similar commands, shell scripts allow us to write more universal and lightweight functionality to perform and automate tasks that JavaScript may not be as well-suited for.
 
 > **Important**: Windows computers and Apple computers running older macOS versions use the **Bash shell environment**. Apple computers with newer versions of macOS use the **Z shell environment** (known as **ZSH**), which is backwards-compatible with Bash. All the commands that we introduce today work in both environments, with only a few differences which we'll address as we go.
 
 ## Build a Simple Shell Script
 
-Like with learning any other programming language, a great first shell-script project is to build a simple "Hello World" application. 
+Like with learning any other programming language, a great first shell-script project is to build a simple "Hello World" application.
 
 The first step is to create a file that holds the shell script. From the command line, use `cd ~` to navigate to the root directory on your computer. Create a `hello.sh` file in the root directory by using the following command:
 
@@ -47,7 +47,7 @@ That's all we need to do for this simple first application, so let's test it. Sa
 ./hello.sh
 ```
 
-Depending on your operating system, you may run into a permissions error that looks something like the following: 
+Depending on your operating system, you may run into a permissions error that looks something like the following:
 
 ```sh
 # it may say something other than `zsh`
@@ -83,7 +83,7 @@ Once those files are created or located, open them in VS Code and add the follow
 alias hello="~/hello.sh"
 ```
 
-Using the `alias` command, we instruct our shell to define the command `hello` and give it a value of the path to our `hello.sh` file. Think of it as creating a shortcut or bookmark so we can save time by not typing out its path every time. 
+Using the `alias` command, we instruct our shell to define the command `hello` and give it a value of the path to our `hello.sh` file. Think of it as creating a shortcut or bookmark so we can save time by not typing out its path every time.
 
 >**Note**: It's very important that there is no space between the command definition and value assignment, so make sure there is no space around the equal sign `=`.
 
@@ -103,7 +103,7 @@ Let's move on to another example and learn how to make a slightly more useful sc
 
 ## Build a Script to Automate a Git Task
 
-Now that we've learned how to write a shell script, let's create one that will actually make our lives easier by automating a Git command to clean up our repositories. 
+Now that we've learned how to write a shell script, let's create one that will actually make our lives easier by automating a Git command to clean up our repositories.
 
 Create a file called `git-file-cleanup.sh` in the root directory and open it in VS Code. Then add the shebang (`#!`) interpreter directive at the top of the file with the following code:
 
@@ -123,11 +123,11 @@ Add the following code to the `git-file-cleanup.sh` file:
 TO_REMOVE=`git clean -f -d -n`;
 ```
 
-Here, we create a variable called `TO_REMOVE` and set it to a value of the `git clean` command. This command allows us to remove any untracked files from a project. We use the `-f` flag to force-delete them from the computer, the `-d` flag to recursively check every directory in the repo, and the `-n` flag to make the command's execution a "dry run." 
+Here, we create a variable called `TO_REMOVE` and set it to a value of the `git clean` command. This command allows us to remove any untracked files from a project. We use the `-f` flag to force-delete them from the computer, the `-d` flag to recursively check every directory in the repo, and the `-n` flag to make the command's execution a "dry run."
 
 The dry run means that it'll go through all the steps it typically goes through and report back what will be removed, without actually removing it. This gives us a chance to confirm whether or not we want to proceed.
 
-Before adding that user input for confirmation, let's check to see if there's anything even there for us to clean, by adding the following code: 
+Before adding that user input for confirmation, let's check to see if there's anything even there for us to clean, by adding the following code:
 
 ```sh
 # if the command's execution doesn't return `null`
@@ -141,7 +141,7 @@ else
 fi;
 ```
 
-With this `if` statement, we use a set of double square brackets `[[ <condition> ]]` to ensure that any white spaces in the string output by the execution of `TO_REMOVE` aren't read as separate arguments. To access a variable, we use the dollar sign `$`. 
+With this `if` statement, we use a set of double square brackets `[[ <condition> ]]` to ensure that any white spaces in the string output by the execution of `TO_REMOVE` aren't read as separate arguments. To access a variable, we use the dollar sign `$`.
 
 If the executed Git command returns and it's not null, as checked by the `-n` flag, we will then move into our functionality. If it is null, we'll print a message indicating that everything is clean and finish the `if` statement with `fi` (many shell commands end with the opening command reversed). Did you notice the semicolon `;` after the `if` statement? That's so we can start a new statement `then` on the same line.
 
@@ -222,7 +222,7 @@ As you can see in the preceding image, we've identified what could be removed if
 
 ![The command line shows the result of choosing to clean the repo, and lets us know what files have been removed.](./Images/04-gfc-complete.png)
 
-Now our Git repository is clean of all untracked files! This may not be a command you need to run all the time, but it clearly demonstrates how we can use shell scripts to optimize workflows. 
+Now our Git repository is clean of all untracked files! This may not be a command you need to run all the time, but it clearly demonstrates how we can use shell scripts to optimize workflows.
 
 ## Reflection
 
@@ -234,11 +234,9 @@ In your spare time, explore the scripts in the `Solved` directory to see what el
 
 To learn more about shell scripts, explore the following resources:
 
-* [The Bash Hackers Wiki](https://wiki.bash-hackers.org/)
-
 * [Learn X in Y Minutes, where X Equals Bash](https://learnxinyminutes.com/docs/bash/)
 
-* [Bash Scripting Cheatsheet from DevHints.io](https://devhints.io/bash)
+* [Bash Scripting cheat sheet from DevHints.io](https://devhints.io/bash)
 
 ---
 © 2024 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.

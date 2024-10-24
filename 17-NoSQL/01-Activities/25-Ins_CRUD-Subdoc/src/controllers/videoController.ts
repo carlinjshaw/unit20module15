@@ -129,7 +129,7 @@ import { Request, Response } from 'express';
     try {
       const video = await Video.findOneAndUpdate(
         { _id: req.params.videoId },
-        { $pull: { reactions: { responseId: req.params.responseId } } },
+        { $pull: { responses: { responseId: req.params.responseId } } },
         { runValidators: true, new: true }
       )
 

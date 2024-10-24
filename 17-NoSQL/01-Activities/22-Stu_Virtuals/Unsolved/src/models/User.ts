@@ -28,6 +28,6 @@ const userSchema = new Schema<IUser>(
 // TODO: Create a setter for the virtual that sets the value of the first and last name, given just the `fullName`
 
 // Initialize our User model
-const User = model('user', userSchema);
+const User = model('User', userSchema);
 
 export default User;

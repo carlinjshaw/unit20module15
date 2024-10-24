@@ -10,9 +10,9 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 // Creates a new document
-app.post('/genres', (req, res) => {
+app.post('/genres', async (req, res) => {
   const newGenre = new Genre({ name: req.body.name });
-  newGenre.save();
+  await newGenre.save();
   if (newGenre) {
     res.status(200).json(newGenre);
   } else {

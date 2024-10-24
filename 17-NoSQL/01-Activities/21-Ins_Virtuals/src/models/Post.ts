@@ -1,10 +1,9 @@
-import { Schema, model, Document, ObjectId } from 'mongoose';
+import { Schema, model, Document, ObjectId  } from 'mongoose';
 
 interface IPost extends Document { 
-  _id: ObjectId;
   text?: string;
   username?: string;
-  comments?: string[];
+  comments?: ObjectId[];
 }
 
 // Schema to create Post model
@@ -12,7 +11,7 @@ const postSchema = new Schema<IPost>(
   {
     text: String,
     username: String,
-    comments: [{ type: Schema.Types.ObjectId, ref: 'comment' }],
+    comments: [{ type: Schema.Types.ObjectId, ref: 'Comment' }],
   },
   {
     toJSON: {
@@ -28,6 +27,6 @@ postSchema.virtual('commentCount').get(function () {
 });
 
 // Initialize our Post model
-const Post = model('post', postSchema);
+const Post = model('Post', postSchema);
 
 export default Post;
